@@ -5,13 +5,33 @@ title: OSINT Portfolio – kbaa
 
 <div class="hero">
   <div class="hero-scanner"></div>
-  <h1>OSINT Investigator & Analyst</h1>
-  <p>Especializado en análisis de fuentes abiertas, geolocalización y verificación de información digital</p>
+  <h1>Especialista en Inteligencia de Fuentes Abiertas (OSINT)</h1>
+  <p>Investigación técnica, geolocalización avanzada y verificación de activos digitales con rigor analítico.</p>
   <div class="hero-buttons">
-    <a href="{{ '/retos' | relative_url }}" class="btn-primary">Explorar Writeups</a>
-    <a href="{{ '/sobre-mi' | relative_url }}" class="btn-secondary">Sobre mí</a>
+    <a href="{{ '/retos' | relative_url }}" class="btn-primary">Ver Investigaciones</a>
+    <a href="{{ '/assets/pdf/cv-biel.pdf' | relative_url }}" class="btn-secondary" download>Descargar CV (PDF)</a>
   </div>
 </div>
+
+<section style="margin: 4rem 0;">
+  <div class="grid">
+    <div class="card" style="text-align: center; padding: 2rem;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔍</div>
+      <h3>Investigación</h3>
+      <p>Metodologías estructuradas para la recolección de inteligencia técnica y corporativa.</p>
+    </div>
+    <div class="card" style="text-align: center; padding: 2rem;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">📍</div>
+      <h3>Geolocalización</h3>
+      <p>Análisis geoespacial y verificación de imágenes mediante técnicas de IMINT avanzadas.</p>
+    </div>
+    <div class="card" style="text-align: center; padding: 2rem;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛡️</div>
+      <h3>Ciberseguridad</h3>
+      <p>Identificación de superficies de ataque y fugas de información sensible.</p>
+    </div>
+  </div>
+</section>
 
 <section class="carousel-section" style="text-align: center;">
   <div class="carousel-glow carousel-glow-1"></div>
