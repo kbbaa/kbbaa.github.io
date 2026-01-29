@@ -32,7 +32,7 @@ permalink: /sobre-mi/
       </div>
       <div class="terminal-output">
         {<br>
-        &nbsp;&nbsp;"focus": ["OSINT", "Open-Source-Analyst" "Geolocation", "Fact-checking"],<br>
+        &nbsp;&nbsp;"focus": ["OSINT", "Open-Source-Analyst", "Geolocation", "Fact-checking"],<br>
         &nbsp;&nbsp;"status": "Active_Investigation"<br>
         }
       </div>
