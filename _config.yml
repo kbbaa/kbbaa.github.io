@@ -1,0 +1,25 @@
+title: "OSINT Portfolio – kbaa"
+description: "Investigación OSINT documentada con claridad y rigor técnico"
+baseurl: ""
+url: "https://kbbaa.github.io"
+
+markdown: kramdown
+permalink: pretty
+
+theme: null
+layouts_dir: _layouts
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+include:
+  - _layouts
+  - assets

@@ -1,0 +1,26 @@
+---
+layout: default
+title: "Ejercicio OSINT #007 – Ubicación de una fotografía"
+date: 2026-01-18
+tags: [gralhix, osint, geolocalizacion, analisis-visual, investigacion]
+---
+
+<div class="investigating-container">
+  <div class="investigating-card">
+    <h1>Investigándose... 🔍</h1>
+    <p>Este writeup está actualmente en proceso de redacción técnica. Estará disponible muy pronto.</p>
+    <div class="pulse-dots">
+       <div class="pulse-dot" style="animation-delay: 0s;"></div>
+       <div class="pulse-dot" style="animation-delay: 0.2s;"></div>
+       <div class="pulse-dot" style="animation-delay: 0.4s;"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+</style>
