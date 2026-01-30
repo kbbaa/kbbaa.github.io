@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ejercicio OSINT #007 – Ubicación de una fotografía"
-date: 2026-01-18
+date: 2024-12-09
 tags: [gralhix, osint, geolocalizacion, analisis-visual, investigacion]
 ---
 
