@@ -9,6 +9,10 @@ tags: [gralhix, osint, geolocalizacion, turquia, investigacion-oficial]
   <h1 style="margin: 0;">Informe de Investigación OSINT #003</h1>
 </div>
 
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="{{ '/assets/img/president1.jpg' | relative_url }}" alt="Imagen del reto" style="max-width: 75%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
+</div>
+
 ## 1. Objetivo del Reto
 Identificar la ubicación exacta donde se encuentran los presidentes en la imagen proporcionada y determinar las coordenadas precisas del punto donde se saludan los funcionarios.
 
@@ -32,10 +36,18 @@ Entre ellas, destacaba una publicación de X (Twitter) que documentaba una visit
 
 **Respuesta:** Complejo Presidencial (Cumhurbaşkanlığı Sarayı), Ankara, Turquía.
 
-### Fase 2: Localización Exacta
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="{{ '/assets/img/president2.png' | relative_url }}" alt="Búsqueda inversa e identificación" style="max-width: 75%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
+</div>
+
+### Phase 2: Localización Exacta
 Para determinar el punto exacto donde los presidentes se dan la mano, utilicé **Google Earth Pro**. Mediante imágenes históricas y ajustes de perspectiva, localicé la entrada principal del complejo presidencial.
 
 Los elementos arquitectónicos —columnas, distribución del pavimento, alfombra ceremonial y disposición del acceso— coincidieron perfectamente con la escena original. Esto permitió identificar con precisión el punto exacto dentro del recinto.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="{{ '/assets/img/president3.png' | relative_url }}" alt="Localización exacta en Google Earth" style="max-width: 75%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
+</div>
 
 ---
 
