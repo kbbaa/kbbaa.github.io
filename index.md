@@ -13,6 +13,17 @@ title: Biel Rosales | OSINT & Ciberseguridad
     color: var(--accent-primary);
     transform: translateY(-5px) scale(1.2);
     filter: drop-shadow(0 0 8px var(--accent-primary));
+    /* La vibración comienza tras 0.5s de hover */
+    animation: shake 0.2s infinite;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes shake {
+    0% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+    25% { transform: translateY(-5px) scale(1.2) rotate(3deg); }
+    50% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+    75% { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
+    100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
   }
 </style>
 
