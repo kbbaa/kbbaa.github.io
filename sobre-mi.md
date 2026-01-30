@@ -18,14 +18,14 @@ permalink: /sobre-mi/
     }
     @keyframes avatarGreenPulseCustom {
       0%, 100% {
-        opacity: 0.5;
-        transform: scale(1); /* Empieza justo en el borde */
-        box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
+        opacity: 0.6;
+        transform: scale(1.01); /* Pegado al borde */
+        box-shadow: 0 0 15px #39ff14;
       }
       50% {
         opacity: 0.9;
-        transform: scale(1.2); /* Se expande más allá del borde */
-        box-shadow: 0 0 45px #39ff14, 0 0 70px rgba(57, 255, 20, 0.5);
+        transform: scale(1.06); /* Sigue el ritmo del zoom de la imagen */
+        box-shadow: 0 0 35px #39ff14, 0 0 50px rgba(57, 255, 20, 0.4);
       }
     }
   </style>
