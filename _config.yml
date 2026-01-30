@@ -1,11 +1,15 @@
-title: "OSINT Portfolio – kbaa"
-description: "Investigación OSINT documentada con claridad y rigor técnico"
+title: "Biel Rosales | Especialista OSINT & Ciberseguridad"
+description: "Portafolio profesional de investigación OSINT, geolocalización avanzada y análisis de ciberseguridad por Biel Rosales."
+author: "Biel Rosales"
+email: "rosalesmartinezbiel2@gmail.com"
+linkedin_username: "biel-rosales-2a488220b"
+github_username: "kbbaa"
+twitter_username: "" # Opcional
 baseurl: ""
 url: "https://kbbaa.github.io"
 
 markdown: kramdown
 permalink: pretty
-
 theme: null
 layouts_dir: _layouts
 
@@ -19,6 +23,7 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 include:
   - _layouts
