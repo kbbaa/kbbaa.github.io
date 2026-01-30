@@ -55,6 +55,27 @@ permalink: /sobre-mi/
 </section>
 
 <section>
+  <h2 style="text-align: center; margin-bottom: 2rem;">Certificaciones y Logros</h2>
+  <div class="grid">
+    <div class="card" style="text-align: center;">
+      <img src="{{ '/assets/img/TryHackMe.png' | relative_url }}" alt="TryHackMe" style="width: 50px; margin-bottom: 1rem;">
+      <h3>TryHackMe</h3>
+      <p>Top 1% Global. Resolución de salas avanzadas de OSINT, Forense y Red Teaming.</p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <img src="{{ '/assets/img/HTB.png' | relative_url }}" alt="HackTheBox" style="width: 50px; margin-bottom: 1rem;">
+      <h3>HackTheBox</h3>
+      <p>Resolución de retos OSINT y máquinas Pro Labs enfocadas en reconocimiento.</p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎓</div>
+      <h3>Certificaciones</h3>
+      <p>Certificaciones en Ciberseguridad y Análisis de Inteligencia (añadir aquí tus títulos específicos).</p>
+    </div>
+  </div>
+</section>
+
+<section>
   <h2 style="text-align: center; margin-bottom: 3rem;">Habilidades Técnicas</h2>
   
   <style>
