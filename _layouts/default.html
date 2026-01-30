@@ -1371,7 +1371,7 @@
       <div class="logo-group">
         <a href="{{ '/' | relative_url }}" style="text-decoration: none; display: flex; align-items: center; gap: 0.8rem;">
           <img src="{{ '/assets/img/oso1.png' | relative_url }}" alt="Profile" class="profile-pic">
-          <span class="logo">kbaa</span>
+          <span class="logo">Biel Rosales</span>
         </a>
       </div>
       <nav>
@@ -1412,7 +1412,7 @@
           </a>
         </div>
         <div class="copyright">
-          © 2026 kbaa - OSINT Portfolio. All rights reserved.
+          © 2025 Biel Rosales - Especialista OSINT & Ciberseguridad
         </div>
       </div>
     </div>
@@ -1420,12 +1420,8 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Title Scrolling Effect
-      let titleText = "{{ page.title }} | OSINT Portfolio – kbaa  ";
-      setInterval(function() {
-        titleText = titleText.substring(1) + titleText.substring(0, 1);
-        document.title = titleText;
-      }, 300);
+      // Set static title for professional UX
+      document.title = "{{ page.title }} | Biel Rosales – OSINT Portfolio";
 
       // Theme Toggle
       const themeToggle = document.getElementById('theme-toggle');
