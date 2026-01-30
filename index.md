@@ -17,17 +17,23 @@ title: Biel Rosales | OSINT & Ciberseguridad
 <section style="margin: 4rem 0;">
   <div class="grid">
     <div class="card" style="text-align: center; padding: 2rem;">
-      <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔍</div>
+      <div style="margin-bottom: 1rem;">
+        <img src="{{ '/assets/img/lupa.png' | relative_url }}" alt="Investigación" style="height: 60px; width: auto;">
+      </div>
       <h3>Investigación</h3>
       <p>Metodologías estructuradas para la recolección de inteligencia técnica y corporativa.</p>
     </div>
     <div class="card" style="text-align: center; padding: 2rem;">
-      <div style="font-size: 2.5rem; margin-bottom: 1rem;">📍</div>
+      <div style="margin-bottom: 1rem;">
+        <img src="{{ '/assets/img/mapa.png' | relative_url }}" alt="Geolocalización" style="height: 60px; width: auto;">
+      </div>
       <h3>Geolocalización</h3>
       <p>Análisis geoespacial y verificación de imágenes mediante técnicas de IMINT avanzadas.</p>
     </div>
     <div class="card" style="text-align: center; padding: 2rem;">
-      <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛡️</div>
+      <div style="margin-bottom: 1rem;">
+        <img src="{{ '/assets/img/escudo.png' | relative_url }}" alt="Ciberseguridad" style="height: 60px; width: auto;">
+      </div>
       <h3>Ciberseguridad</h3>
       <p>Identificación de superficies de ataque y fugas de información sensible.</p>
     </div>
