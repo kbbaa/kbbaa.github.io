@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ejercicio OSINT #004 – Complejo turístico en una isla"
-date: 2026-01-22
+date: 2024-09-25
 tags: [gralhix, osint, geolocalizacion, imagenes, turismo]
 ---
 
