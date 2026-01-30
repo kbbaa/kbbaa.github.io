@@ -8,7 +8,7 @@ permalink: /sobre-mi/
   <div class="hero-scanner"></div>
   <div class="avatar-container">
     <div class="avatar-glow"></div>
-    <img src="{{ '/assets/img/oso.jpg' | relative_url }}" alt="Biel Rosales" class="avatar-img">
+    <img src="{{ '/assets/img/oso1.png' | relative_url }}" alt="Biel Rosales" class="avatar-img">
   </div>
   <h1>Hola, soy <span class="neon-text">Biel</span></h1>
   <p>OSINT Investigator apasionado por el análisis de fuentes abiertas y la verificación de información digital</p>
