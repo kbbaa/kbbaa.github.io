@@ -5,6 +5,30 @@ permalink: /sobre-mi/
 ---
 
 <div class="hero">
+  <style>
+    .avatar-img {
+      animation: avatarImgPulse 4s ease-in-out infinite !important;
+    }
+    .avatar-glow {
+      animation: avatarGreenPulseCustom 4s ease-in-out infinite !important;
+    }
+    @keyframes avatarImgPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes avatarGreenPulseCustom {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.95);
+        box-shadow: 0 0 15px #0d4d06;
+      }
+      50% {
+        opacity: 0.8;
+        transform: scale(1.15);
+        box-shadow: 0 0 40px #39ff14, 0 0 60px rgba(57, 255, 20, 0.4);
+      }
+    }
+  </style>
   <div class="hero-scanner"></div>
   <div class="avatar-container">
     <div class="avatar-glow"></div>
