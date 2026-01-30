@@ -1,15 +1,16 @@
 ---
 layout: default
-title: OSINT Portfolio – kbaa
+title: Biel Rosales | OSINT & Ciberseguridad
 ---
 
 <div class="hero">
   <div class="hero-scanner"></div>
-  <h1>Especialista en Inteligencia de Fuentes Abiertas (OSINT)</h1>
+  <h1>Biel Rosales</h1>
+  <p style="font-size: 1.5rem; color: var(--accent-primary); font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem;">Especialista en OSINT & Analista de Ciberseguridad</p>
   <p>Investigación técnica, geolocalización avanzada y verificación de activos digitales con rigor analítico.</p>
   <div class="hero-buttons">
     <a href="{{ '/retos' | relative_url }}" class="btn-primary">Ver Investigaciones</a>
-    <a href="{{ '/assets/pdf/cv-biel.pdf' | relative_url }}" class="btn-secondary" download>Descargar CV (PDF)</a>
+    <a href="https://www.linkedin.com/in/biel-rosales-2a488220b/" target="_blank" class="btn-secondary">Conectar en LinkedIn</a>
   </div>
 </div>
 
