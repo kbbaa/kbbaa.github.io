@@ -83,6 +83,9 @@ permalink: /retos/
   .branch-htb {
     animation: growLine 0.5s ease-out forwards, rainbow-green 3s infinite linear !important;
   }
+  .branch-uk {
+    animation: growLine 0.5s ease-out forwards, rainbow-uk 3s infinite linear !important;
+  }
 
   @keyframes rainbow-blue {
     0% { border-color: #0ea5e9; filter: drop-shadow(0 0 5px #0ea5e9); }
@@ -103,6 +106,13 @@ permalink: /retos/
     33% { border-color: #4ade80; filter: drop-shadow(0 0 8px #4ade80); }
     66% { border-color: #16a34a; filter: drop-shadow(0 0 5px #16a34a); }
     100% { border-color: #22c55e; filter: drop-shadow(0 0 5px #22c55e); }
+  }
+
+  @keyframes rainbow-uk {
+    0% { border-color: #00247d; filter: drop-shadow(0 0 5px #00247d); }
+    33% { border-color: #cf142b; filter: drop-shadow(0 0 8px #cf142b); }
+    66% { border-color: #ffffff; filter: drop-shadow(0 0 5px #ffffff); }
+    100% { border-color: #00247d; filter: drop-shadow(0 0 5px #00247d); }
   }
 
   /* Arrow head inherited color */
@@ -258,6 +268,30 @@ permalink: /retos/
           Investigándose... 🔍 (Próximamente retos de HackTheBox)
         </p>
         {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección UK OSINT -->
+  <div class="platform-container" id="uk-section">
+    <div class="platform-header" onclick="togglePlatform('uk-section')">
+      <img src="{{ '/assets/img/uk-osint.png' | relative_url }}" alt="UK OSINT" class="platform-logo">
+      <h2 class="platform-title">UK OSINT</h2>
+    </div>
+    
+    <div class="branch-line branch-uk"></div>
+    
+    <div class="platform-content">
+      <div class="platform-grid">
+        <div class="card">
+          <div class="card-date">Repositorio</div>
+          <h3><a href="#" class="stretched-link">WINDOWS or MAC</a></h3>
+          <p>Repositorio de herramientas y recursos para UK OSINT en sistemas Windows o Mac.</p>
+          <div class="tags">
+            <span class="tag tag-windows">Windows</span>
+            <span class="tag tag-mac">Mac</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
