@@ -39,7 +39,7 @@ Una vez obtenida una imagen mínimamente clara, procedemos a realizar una búsqu
   <img src="{{ '/assets/img/ukdistorsion4.png' | relative_url }}" alt="Identificación del objetivo" style="max-width: 60%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
   
   <div style="margin-top: 1.5rem; font-size: 1.2rem;">
-    **Flag 🚩:** `osintuk{Lee_Mack}`
+    <strong>Flag 🚩:</strong> <code>osintuk{Lee_Mack}</code>
   </div>
 </div>
 
