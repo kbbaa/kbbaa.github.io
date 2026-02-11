@@ -283,15 +283,25 @@ permalink: /retos/
     
     <div class="platform-content">
       <div class="platform-grid">
+        {% assign uk_posts = site.posts | where_exp: "post", "post.tags contains 'uk-osint'" | reverse %}
+        {% for post in uk_posts %}
         <div class="card">
-          <div class="card-date">Repositorio</div>
-          <h3><a href="#" class="stretched-link">WINDOWS or MAC</a></h3>
-          <p>Repositorio de herramientas y recursos para UK OSINT en sistemas Windows o Mac.</p>
+          <div class="card-date">{{ post.date | date: "%d de %B, %Y" }}</div>
+          <h3><a href="{{ post.url }}" class="stretched-link">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | default: "Análisis OSINT detallado con proceso paso a paso y herramientas utilizadas." | strip_html | truncatewords: 20 }}</p>
           <div class="tags">
-            <span class="tag tag-windows">Windows</span>
-            <span class="tag tag-mac">Mac</span>
+            {% for tag in post.tags %}
+            <span class="tag tag-{{ tag | slugify }}">{{ tag }}</span>
+            {% endfor %}
           </div>
         </div>
+        {% endfor %}
+        
+        {% if uk_posts.size == 0 %}
+        <p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">
+          Investigándose... 🔍 (Próximamente retos de UK OSINT)
+        </p>
+        {% endif %}
       </div>
     </div>
   </div>
