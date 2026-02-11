@@ -10,7 +10,7 @@ tags: [uk-osint, osint, esteganografia, forense]
 </div>
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="{{ '/assets/img/Landscape.jpg' | relative_url }}" alt="Imagen Landscape" style="max-width: 60%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
+  <img src="{{ '/assets/img/Landscape.jpg' | relative_url }}" alt="Imagen Landscape" style="max-width: 30%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
 </div>
 
 ## Introducción
@@ -18,7 +18,7 @@ tags: [uk-osint, osint, esteganografia, forense]
 En este ejercicio partimos de una imagen en la que sabemos que existe texto oculto, aunque a simple vista apenas es perceptible. Si observamos con atención la zona del cielo, podemos distinguir ligeras variaciones de tonalidad en el gris, lo que sugiere la presencia de caracteres muy difuminados.
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="{{ '/assets/img/Landscape1.jpg' | relative_url }}" alt="Análisis de tonalidad" style="max-width: 60%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
+  <img src="{{ '/assets/img/Landscape1.jpg' | relative_url }}" alt="Análisis de tonalidad" style="max-width: 30%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
 </div>
 
 ## Análisis y Proceso
