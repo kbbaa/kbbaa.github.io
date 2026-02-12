@@ -59,9 +59,8 @@ Una vez localizada la sucursal exacta, solo queda consultar su ficha en Google M
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="{{ '/assets/img/bigjohn4.png' | relative_url }}" alt="Final confirmation" style="max-width: 80%; height: auto; border-radius: 8px; border: 1px solid var(--border-color);">
+  <p style="margin-top: 1.5rem; font-size: 1.2rem;">**FLAG 🚩** `osintuk{B709RL}`</p>
 </div>
-
-**FLAG 🚩** `osintuk{B709RL}`
 
 <section style="text-align: center; margin-top: 3rem;">
   <a href="{{ '/retos' | relative_url }}" class="btn-primary">← Volver a Writeups</a>
