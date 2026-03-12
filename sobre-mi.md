@@ -8,24 +8,26 @@ permalink: /sobre-mi/
   <style>
     .avatar-img {
       animation: avatarImgPulse 4s ease-in-out infinite !important;
+      border-color: #cc0000 !important;
     }
     .avatar-glow {
-      animation: avatarGreenPulseCustom 4s ease-in-out infinite !important;
+      animation: avatarRedPulseCustom 4s ease-in-out infinite !important;
+      box-shadow: 0 0 20px #cc0000 !important;
     }
     @keyframes avatarImgPulse {
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.05); }
     }
-    @keyframes avatarGreenPulseCustom {
+    @keyframes avatarRedPulseCustom {
       0%, 100% {
         opacity: 0.6;
-        transform: scale(1.01); /* Pegado al borde */
-        box-shadow: 0 0 15px #39ff14;
+        transform: scale(1.01);
+        box-shadow: 0 0 15px #cc0000;
       }
       50% {
         opacity: 0.9;
-        transform: scale(1.06); /* Sigue el ritmo del zoom de la imagen */
-        box-shadow: 0 0 35px #39ff14, 0 0 50px rgba(57, 255, 20, 0.4);
+        transform: scale(1.06);
+        box-shadow: 0 0 35px #cc0000, 0 0 50px rgba(200, 0, 0, 0.4);
       }
     }
   </style>
@@ -89,7 +91,6 @@ permalink: /sobre-mi/
       padding: 2rem;
     }
 
-    /* Blobs de luz de fondo (Efecto Neon de la imagen) */
     .skills-glow-blob {
       position: absolute;
       width: 400px;
@@ -97,42 +98,37 @@ permalink: /sobre-mi/
       border-radius: 50%;
       filter: blur(100px);
       z-index: -1;
-      opacity: 0.5;
+      opacity: 0.4;
     }
     .blob-blue {
       top: -100px;
       left: -100px;
-      background: rgba(9, 105, 218, 0.6);
+      background: rgba(180, 0, 0, 0.5);
     }
     .blob-purple {
       bottom: -100px;
       right: -100px;
-      background: rgba(236, 72, 153, 0.4);
+      background: rgba(100, 0, 0, 0.4);
     }
 
     .skills-wrapper {
       position: relative;
       padding: 3rem 2.5rem;
-      /* Cristal azul opaco con degradado */
-      background: linear-gradient(135deg, rgba(13, 17, 23, 0.8), rgba(9, 105, 218, 0.2));
-      backdrop-filter: blur(25px);
-      -webkit-backdrop-filter: blur(25px);
-      /* Borde fino y brillante tipo cristal */
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: linear-gradient(135deg, rgba(17, 0, 0, 0.85), rgba(140, 0, 0, 0.15));
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(200, 30, 30, 0.25);
       border-radius: 24px;
-      box-shadow: 
-        0 20px 50px rgba(0, 0, 0, 0.5),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
       overflow: hidden;
     }
 
-    /* Brillo en el borde superior del cristal */
     .skills-wrapper::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      background: linear-gradient(90deg, transparent, rgba(220, 30, 30, 0.5), transparent);
       z-index: 2;
     }
 
@@ -152,49 +148,42 @@ permalink: /sobre-mi/
       font-family: 'JetBrains Mono', monospace;
       font-weight: 600;
       font-size: 1rem;
-      color: #ffffff;
+      color: #f5e0e0;
       display: flex;
       align-items: center;
       gap: 12px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
 
     .progress-bar-container {
       width: 100%;
       height: 14px;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.4);
       border-radius: 100vw;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(200, 30, 30, 0.15);
       position: relative;
     }
 
     .progress-fill {
       height: 100%;
       width: 0;
-      /* Degradado neon vibrante */
-      background: linear-gradient(90deg, #007cf0, #00dfd8);
+      background: linear-gradient(90deg, #8b0000, #e02020, #ff4444);
       border-radius: 100vw;
       position: relative;
       transition: width 2.5s cubic-bezier(0.22, 1, 0.36, 1);
-      box-shadow: 0 0 20px rgba(0, 223, 216, 0.4);
+      box-shadow: 0 0 12px rgba(220, 30, 30, 0.5);
     }
 
     .progress-fill::after {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-      );
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
       animation: barScan 3s infinite;
     }
 
     @keyframes barScan {
-      0% { transform: translateX(-100%); }
+      0%   { transform: translateX(-100%); }
       100% { transform: translateX(100%); }
     }
 
@@ -203,7 +192,7 @@ permalink: /sobre-mi/
       bottom: 28px;
       left: 0;
       transform: translateX(-50%);
-      background: #007cf0;
+      background: #cc0000;
       color: white;
       padding: 4px 10px;
       border-radius: 6px;
@@ -211,12 +200,12 @@ permalink: /sobre-mi/
       font-size: 0.75rem;
       font-weight: 800;
       opacity: 0;
-      transition: 
+      transition:
         opacity 0.6s ease-out,
         left 2.5s cubic-bezier(0.22, 1, 0.36, 1);
       pointer-events: none;
       z-index: 10;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
 
     .skill-tooltip::after {
@@ -226,11 +215,11 @@ permalink: /sobre-mi/
       left: 50%;
       transform: translateX(-50%);
       border: 6px solid transparent;
-      border-top-color: #007cf0;
+      border-top-color: #cc0000;
     }
 
-    .animate .progress-fill { width: var(--target-width); }
-    .animate .skill-tooltip { opacity: 1; left: var(--target-width); }
+    .animate .progress-fill  { width: var(--target-width); }
+    .animate .skill-tooltip  { opacity: 1; left: var(--target-width); }
 
     @media (max-width: 768px) {
       .skills-outer-container { padding: 1rem; margin: 2rem auto; }
@@ -380,7 +369,7 @@ permalink: /sobre-mi/
   </style>
 
   <h2>Vamos a Conectar</h2>
-  <p style="color: #94a3b8; font-size: 1.1rem; margin-bottom: 2rem;">
+  <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
     ¿Interesado en colaborar o simplemente charlar sobre OSINT?
   </p>
   <div class="social-links" style="justify-content: center; gap: 3rem; display: flex;">
