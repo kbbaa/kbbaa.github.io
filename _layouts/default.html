@@ -301,7 +301,6 @@
       .carousel-btn {
         display: none; /* En móviles usamos swipe/indicators */
       }
-    }
 
     /* Para Pantallas Ultra-Wide (TV/Monitores grandes) */
     @media (min-width: 2000px) {
@@ -946,14 +945,14 @@
 
     .carousel-wrapper {
       overflow: hidden;
-      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      width: 100%;
+      margin: 0 auto;
     }
 
     .carousel-track {
       display: flex;
       width: max-content;
-      animation: infinite-scroll 40s linear infinite;
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .carousel-track:hover {
@@ -961,13 +960,13 @@
     }
 
     .carousel-slide {
-      flex: 0 0 450px;
-      padding: 20px 1.5rem;
+      flex: 0 0 100%;
     }
 
-    @keyframes infinite-scroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+    @media (min-width: 768px) {
+      .carousel-slide {
+        flex: 0 0 450px;
+      }
     }
 
     .carousel-card {
@@ -1294,18 +1293,88 @@
       }
       
       .carousel-container {
-        padding: 0 3rem;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
       }
       
-      .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
+      .carousel-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(var(--bg-primary-rgb), 0.5);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 10;
+        flex-shrink: 0;
       }
+
+      .carousel-nav:hover {
+        background: var(--accent-primary);
+        color: white;
+        border-color: var(--accent-primary);
+        transform: scale(1.1);
+        box-shadow: 0 0 15px var(--accent-primary);
+      }
+
+      .carousel-nav.prev { order: 1; }
+      .carousel-wrapper { order: 2; flex-grow: 1; }
+      .carousel-nav.next { order: 3; }
       
       .footer-content {
         flex-direction: column;
         text-align: center;
+      }
+    }
+
+    /* Desktop Styles for Nav Buttons */
+    @media (min-width: 769px) {
+      .carousel-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 2rem;
+      }
+
+      .carousel-nav {
+        background: rgba(var(--bg-primary-rgb), 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .carousel-nav :where(svg) {
+        width: 30px;
+        height: 30px;
+      }
+
+      .carousel-nav:hover {
+        background: var(--accent-primary);
+        color: white;
+        border-color: var(--accent-primary);
+        transform: scale(1.1);
+        box-shadow: 0 0 30px var(--accent-primary);
+      }
+      
+      .carousel-wrapper {
+        flex-grow: 1;
       }
     }
   </style>
@@ -1458,6 +1527,68 @@
       };
 
       revealElements();
+
+      // Carousel Logic
+      const track = document.getElementById('carouselTrack');
+      const prevBtn = document.querySelector('.carousel-nav.prev');
+      const nextBtn = document.querySelector('.carousel-nav.next');
+      
+      if (track && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        const slides = track.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        if (totalSlides === 0) return;
+        
+        function updateCarousel() {
+          if (!slides[0]) return;
+          const slideWidth = slides[0].offsetWidth;
+          const containerWidth = track.parentElement.offsetWidth;
+          let offset = 0;
+
+          // En desktop (varios slides visibles), centramos o ajustamos
+          if (window.innerWidth >= 768) {
+             offset = currentIndex * slideWidth;
+             // Verificamos no pasarnos del final para que no quede hueco
+             const maxOffset = track.scrollWidth - containerWidth;
+             if (offset > maxOffset) offset = maxOffset;
+          } else {
+             // En móvil, slide completo
+             offset = currentIndex * containerWidth;
+          }
+          
+          track.style.transform = `translateX(-${offset}px)`;
+          
+          // Update buttons state
+          prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '1';
+          prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+          
+          // Lógica para el botón Next
+          const itemsVisible = Math.floor(containerWidth / slides[0].offsetWidth) || 1;
+          const isAtEnd = currentIndex >= totalSlides - itemsVisible;
+          nextBtn.style.opacity = isAtEnd ? '0.3' : '1';
+          nextBtn.style.pointerEvents = isAtEnd ? 'none' : 'auto';
+        }
+
+        nextBtn.addEventListener('click', () => {
+          const containerWidth = track.parentElement.offsetWidth;
+          const itemsVisible = Math.floor(containerWidth / slides[0].offsetWidth) || 1;
+          if (currentIndex < totalSlides - itemsVisible) {
+            currentIndex++;
+            updateCarousel();
+          }
+        });
+
+        prevBtn.addEventListener('click', () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        });
+
+        window.addEventListener('resize', updateCarousel);
+        // Initial state
+        setTimeout(updateCarousel, 100);
+      }
     });
   </script>
 </body>
