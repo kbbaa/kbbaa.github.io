@@ -158,20 +158,10 @@ title: Biel Rosales | OSINT & Ciberseguridad
     const total = slides.length;
     let current = 0;
 
-    // Detect how many slides are visible (1 on mobile, 3 on desktop)
-    function getSlidesVisible() {
-      return window.innerWidth >= 768 ? 3 : 1;
-    }
-
-    function maxIndex() {
-      return Math.max(0, total - getSlidesVisible());
-    }
-
     // Build dots
     function buildDots() {
       dotsContainer.innerHTML = '';
-      const count = maxIndex() + 1;
-      for (let i = 0; i <= maxIndex(); i++) {
+      for (let i = 0; i < total; i++) {
         const dot = document.createElement('button');
         dot.className = 'carousel-dot' + (i === current ? ' active' : '');
         dot.setAttribute('aria-label', 'Ir al slide ' + (i + 1));
@@ -187,22 +177,17 @@ title: Biel Rosales | OSINT & Ciberseguridad
     }
 
     function goTo(index) {
-      current = Math.max(0, Math.min(index, maxIndex()));
+      // Cyclic: wrap around
+      current = ((index % total) + total) % total;
       const slideWidth = slides[0].getBoundingClientRect().width;
       track.style.transform = `translateX(-${current * slideWidth}px)`;
-      prevBtn.disabled = current === 0;
-      nextBtn.disabled = current >= maxIndex();
       updateDots();
     }
 
     prevBtn.addEventListener('click', () => goTo(current - 1));
     nextBtn.addEventListener('click', () => goTo(current + 1));
 
-    // Recalculate on resize
-    window.addEventListener('resize', () => {
-      buildDots();
-      goTo(Math.min(current, maxIndex()));
-    });
+    window.addEventListener('resize', () => goTo(current));
 
     buildDots();
     goTo(0);
