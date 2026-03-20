@@ -57,7 +57,6 @@ permalink: /retos/
     letter-spacing: -1px;
   }
 
-  /* Decorative Branch Line (L-shape) */
   .branch-line {
     position: absolute;
     top: 60px;
@@ -73,7 +72,6 @@ permalink: /retos/
     filter: drop-shadow(0 0 5px var(--accent-primary));
   }
 
-  /* Animations for each platform */
   .branch-gralhix {
     animation: growLine 0.5s ease-out forwards, rainbow-blue 3s infinite linear !important;
   }
@@ -88,34 +86,33 @@ permalink: /retos/
   }
 
   @keyframes rainbow-blue {
-    0% { border-color: #0ea5e9; filter: drop-shadow(0 0 5px #0ea5e9); }
-    33% { border-color: #00f2ff; filter: drop-shadow(0 0 8px #00f2ff); }
-    66% { border-color: #3b82f6; filter: drop-shadow(0 0 5px #3b82f6); }
+    0%   { border-color: #0ea5e9; filter: drop-shadow(0 0 5px #0ea5e9); }
+    33%  { border-color: #00f2ff; filter: drop-shadow(0 0 8px #00f2ff); }
+    66%  { border-color: #3b82f6; filter: drop-shadow(0 0 5px #3b82f6); }
     100% { border-color: #0ea5e9; filter: drop-shadow(0 0 5px #0ea5e9); }
   }
 
   @keyframes rainbow-red {
-    0% { border-color: #ef4444; filter: drop-shadow(0 0 5px #ef4444); }
-    33% { border-color: #f87171; filter: drop-shadow(0 0 8px #f87171); }
-    66% { border-color: #dc2626; filter: drop-shadow(0 0 5px #dc2626); }
+    0%   { border-color: #ef4444; filter: drop-shadow(0 0 5px #ef4444); }
+    33%  { border-color: #f87171; filter: drop-shadow(0 0 8px #f87171); }
+    66%  { border-color: #dc2626; filter: drop-shadow(0 0 5px #dc2626); }
     100% { border-color: #ef4444; filter: drop-shadow(0 0 5px #ef4444); }
   }
 
   @keyframes rainbow-green {
-    0% { border-color: #22c55e; filter: drop-shadow(0 0 5px #22c55e); }
-    33% { border-color: #4ade80; filter: drop-shadow(0 0 8px #4ade80); }
-    66% { border-color: #16a34a; filter: drop-shadow(0 0 5px #16a34a); }
+    0%   { border-color: #22c55e; filter: drop-shadow(0 0 5px #22c55e); }
+    33%  { border-color: #4ade80; filter: drop-shadow(0 0 8px #4ade80); }
+    66%  { border-color: #16a34a; filter: drop-shadow(0 0 5px #16a34a); }
     100% { border-color: #22c55e; filter: drop-shadow(0 0 5px #22c55e); }
   }
 
   @keyframes rainbow-uk {
-    0% { border-color: #00247d; filter: drop-shadow(0 0 5px #00247d); }
-    33% { border-color: #cf142b; filter: drop-shadow(0 0 8px #cf142b); }
-    66% { border-color: #ffffff; filter: drop-shadow(0 0 5px #ffffff); }
+    0%   { border-color: #00247d; filter: drop-shadow(0 0 5px #00247d); }
+    33%  { border-color: #cf142b; filter: drop-shadow(0 0 8px #cf142b); }
+    66%  { border-color: #ffffff; filter: drop-shadow(0 0 5px #ffffff); }
     100% { border-color: #00247d; filter: drop-shadow(0 0 5px #00247d); }
   }
 
-  /* Arrow head inherited color */
   .branch-line::after {
     content: '';
     position: absolute;
@@ -129,9 +126,7 @@ permalink: /retos/
     border-left-color: inherit;
   }
 
-  .platform-container.active .branch-line {
-    display: block;
-  }
+  .platform-container.active .branch-line { display: block; }
 
   .platform-content {
     max-height: 0;
@@ -143,14 +138,14 @@ permalink: /retos/
 
   .platform-container.active .platform-content {
     max-height: 3000px;
-    padding-left: 110px; /* Offset for the branch line */
+    padding-left: 110px;
     padding-top: 40px;
     opacity: 1;
   }
 
   @keyframes growLine {
     from { height: 0; width: 0; opacity: 0; }
-    to { height: 60px; width: 100px; opacity: 0.6; }
+    to   { height: 60px; width: 100px; opacity: 0.6; }
   }
 
   .platform-grid {
@@ -160,12 +155,8 @@ permalink: /retos/
   }
 
   @media (max-width: 768px) {
-    .platform-container.active .platform-content {
-      padding-left: 20px;
-    }
-    .branch-line {
-      display: none !important;
-    }
+    .platform-container.active .platform-content { padding-left: 20px; }
+    .branch-line { display: none !important; }
   }
 </style>
 
@@ -176,15 +167,12 @@ permalink: /retos/
 </div>
 
 <section>
-  <!-- Sección Gralhix -->
   <div class="platform-container" id="gralhix-section">
     <div class="platform-header" onclick="togglePlatform('gralhix-section')">
       <img src="{{ '/assets/img/gralhix-site-icon.png' | relative_url }}" alt="Gralhix" class="platform-logo">
       <h2 class="platform-title">Gralhix</h2>
     </div>
-    
     <div class="branch-line branch-gralhix"></div>
-    
     <div class="platform-content">
       <div class="platform-grid">
         {% assign gralhix_posts = site.posts | where_exp: "post", "post.tags contains 'gralhix'" | reverse %}
@@ -204,15 +192,12 @@ permalink: /retos/
     </div>
   </div>
 
-  <!-- Sección TryHackMe -->
   <div class="platform-container" id="thm-section">
     <div class="platform-header" onclick="togglePlatform('thm-section')">
       <img src="{{ '/assets/img/TryHackMe.png' | relative_url }}" alt="TryHackMe" class="platform-logo">
       <h2 class="platform-title">TryHackMe</h2>
     </div>
-    
     <div class="branch-line branch-thm"></div>
-    
     <div class="platform-content">
       <div class="platform-grid">
         {% assign thm_posts = site.posts | where_exp: "post", "post.tags contains 'tryhackme'" | reverse %}
@@ -228,7 +213,6 @@ permalink: /retos/
           </div>
         </div>
         {% endfor %}
-        
         {% if thm_posts.size == 0 %}
         <p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">
           Investigándose... 🔍 (Próximamente retos de TryHackMe)
@@ -238,15 +222,12 @@ permalink: /retos/
     </div>
   </div>
 
-  <!-- Sección HackTheBox -->
   <div class="platform-container" id="htb-section">
     <div class="platform-header" onclick="togglePlatform('htb-section')">
       <img src="{{ '/assets/img/HTB.png' | relative_url }}" alt="HackTheBox" class="platform-logo">
       <h2 class="platform-title">HackTheBox</h2>
     </div>
-    
     <div class="branch-line branch-htb"></div>
-    
     <div class="platform-content">
       <div class="platform-grid">
         {% assign htb_posts = site.posts | where_exp: "post", "post.tags contains 'hackthebox'" | reverse %}
@@ -262,7 +243,6 @@ permalink: /retos/
           </div>
         </div>
         {% endfor %}
-        
         {% if htb_posts.size == 0 %}
         <p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">
           Investigándose... 🔍 (Próximamente retos de HackTheBox)
@@ -272,15 +252,12 @@ permalink: /retos/
     </div>
   </div>
 
-  <!-- Sección UK OSINT -->
   <div class="platform-container" id="uk-section">
     <div class="platform-header" onclick="togglePlatform('uk-section')">
       <img src="{{ '/assets/img/uk-osint.png' | relative_url }}" alt="UK OSINT" class="platform-logo">
       <h2 class="platform-title">UK OSINT</h2>
     </div>
-    
     <div class="branch-line branch-uk"></div>
-    
     <div class="platform-content">
       <div class="platform-grid">
         {% assign uk_posts = site.posts | where_exp: "post", "post.tags contains 'uk-osint'" | reverse %}
@@ -296,7 +273,6 @@ permalink: /retos/
           </div>
         </div>
         {% endfor %}
-        
         {% if uk_posts.size == 0 %}
         <p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">
           Investigándose... 🔍 (Próximamente retos de UK OSINT)
@@ -306,11 +282,10 @@ permalink: /retos/
     </div>
   </div>
 
-
   {% if site.posts.size == 0 %}
   <div class="highlight-box" style="text-align: center; padding: 3rem;">
-    <h3 style="margin-bottom: 1rem; color: #f97316;">Contenido en desarrollo</h3>
-    <p style="color: #94a3b8; margin: 0;">
+    <h3 style="margin-bottom: 1rem;">Contenido en desarrollo</h3>
+    <p style="color: var(--text-secondary); margin: 0;">
       Estoy trabajando en nuevos writeups OSINT. Vuelve pronto para ver más análisis detallados.
     </p>
   </div>
@@ -324,9 +299,9 @@ permalink: /retos/
   }
 </script>
 
-<section style="background: linear-gradient(135deg, rgba(var(--bg-primary-rgb), 0.4), rgba(9, 105, 218, 0.05)); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 3rem; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.1); margin-top: 4rem; position: relative; overflow: hidden;">
-  <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);"></div>
-  <h3 style="text-align: center; margin-bottom: 1.5rem; color: #ffffff; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Sobre estos writeups</h3>
+<section style="background: linear-gradient(135deg, rgba(var(--bg-primary-rgb), 0.4), rgba(0, 119, 182, 0.08)); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 3rem; border-radius: 24px; border: 1px solid rgba(0, 180, 216, 0.15); margin-top: 4rem; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(0, 180, 216, 0.3), transparent);"></div>
+  <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-primary);">Sobre estos writeups</h3>
   <p style="text-align: center; color: var(--text-secondary); max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem;">
     Cada writeup está diseñado para ser <strong>educativo y reproducible</strong>. Incluye el proceso completo de investigación, desde la observación inicial hasta las conclusiones finales, con todas las herramientas y técnicas utilizadas documentadas.
   </p>
