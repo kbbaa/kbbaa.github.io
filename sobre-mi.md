@@ -86,7 +86,7 @@ permalink: /sobre-mi/
   <style>
     .skills-outer-container {
       position: relative;
-      max-width: 700px;
+      max-width: 850px;
       margin: 2rem auto;
       padding: 2.5rem 2rem;
       background: linear-gradient(135deg, rgba(17, 0, 0, 0.85), rgba(140, 0, 0, 0.15));
@@ -141,7 +141,7 @@ permalink: /sobre-mi/
   </style>
 
   <div class="skills-outer-container">
-    <div style="position: relative; width: 100%; height: 420px;">
+    <div style="position: relative; width: 100%; height: 520px;">
       <canvas id="radarChart"></canvas>
     </div>
     <div class="radar-legend">
