@@ -8,26 +8,26 @@ permalink: /sobre-mi/
   <style>
     .avatar-img {
       animation: avatarImgPulse 4s ease-in-out infinite !important;
-      border-color: #cc0000 !important;
+      border-color: #00b4d8 !important;
     }
     .avatar-glow {
-      animation: avatarRedPulseCustom 4s ease-in-out infinite !important;
-      box-shadow: 0 0 20px #cc0000 !important;
+      animation: avatarCyanPulseCustom 4s ease-in-out infinite !important;
+      box-shadow: 0 0 20px #00b4d8 !important;
     }
     @keyframes avatarImgPulse {
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.05); }
     }
-    @keyframes avatarRedPulseCustom {
+    @keyframes avatarCyanPulseCustom {
       0%, 100% {
         opacity: 0.6;
         transform: scale(1.01);
-        box-shadow: 0 0 15px #cc0000;
+        box-shadow: 0 0 15px #00b4d8;
       }
       50% {
         opacity: 0.9;
         transform: scale(1.06);
-        box-shadow: 0 0 35px #cc0000, 0 0 50px rgba(200, 0, 0, 0.4);
+        box-shadow: 0 0 35px #00b4d8, 0 0 50px rgba(0, 180, 216, 0.4);
       }
     }
   </style>
@@ -38,7 +38,7 @@ permalink: /sobre-mi/
   </div>
   <h1>Hola, soy <span class="neon-text">Biel</span></h1>
   <p>OSINT Investigator apasionado por el análisis de fuentes abiertas y la verificación de información digital</p>
-  
+
   <div class="terminal-container" style="max-width: 600px; margin: 2rem auto; text-align: left;">
     <div class="terminal-header">
       <div class="terminal-dot dot-red"></div>
@@ -89,24 +89,22 @@ permalink: /sobre-mi/
       max-width: 850px;
       margin: 2rem auto;
       padding: 2.5rem 2rem;
-      background: linear-gradient(135deg, rgba(17, 0, 0, 0.85), rgba(140, 0, 0, 0.15));
+      background: linear-gradient(135deg, rgba(5, 15, 26, 0.85), rgba(0, 119, 182, 0.15));
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(200, 30, 30, 0.25);
+      border: 1px solid rgba(0, 180, 216, 0.25);
       border-radius: 24px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
       overflow: hidden;
     }
-
     .skills-outer-container::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(220, 30, 30, 0.5), transparent);
+      background: linear-gradient(90deg, transparent, rgba(0, 180, 216, 0.5), transparent);
       z-index: 2;
     }
-
     .radar-legend {
       display: flex;
       flex-wrap: wrap;
@@ -114,29 +112,23 @@ permalink: /sobre-mi/
       justify-content: center;
       margin-top: 1.5rem;
     }
-
     .radar-legend span {
       display: flex;
       align-items: center;
       gap: 6px;
       font-size: 12px;
-      color: #f5e0e0;
+      color: #dff0f8;
       font-family: 'JetBrains Mono', monospace;
     }
-
     .legend-dot {
       width: 10px;
       height: 10px;
       border-radius: 2px;
-      background: #cc0000;
+      background: #00b4d8;
       display: inline-block;
     }
-
     @media (max-width: 768px) {
-      .skills-outer-container {
-        padding: 1.5rem 1rem;
-        margin: 1rem auto;
-      }
+      .skills-outer-container { padding: 1.5rem 1rem; margin: 1rem auto; }
     }
   </style>
 
@@ -164,21 +156,19 @@ permalink: /sobre-mi/
             'Dark Web Investigation',
             'Malware Analysis'
           ],
-          datasets: [
-            {
-              label: 'Nivel actual',
-              data: [95, 90, 85, 80, 75, 88],
-              backgroundColor: 'rgba(204, 0, 0, 0.25)',
-              borderColor: '#cc0000',
-              borderWidth: 2,
-              pointBackgroundColor: '#ff4444',
-              pointBorderColor: '#8b0000',
-              pointBorderWidth: 2,
-              pointRadius: 5,
-              pointHoverRadius: 7,
-              pointHoverBackgroundColor: '#ff6666',
-            }
-          ]
+          datasets: [{
+            label: 'Nivel actual',
+            data: [95, 90, 85, 80, 75, 88],
+            backgroundColor: 'rgba(0, 180, 216, 0.18)',
+            borderColor: '#00b4d8',
+            borderWidth: 2,
+            pointBackgroundColor: '#48cae4',
+            pointBorderColor: '#0077b6',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointHoverBackgroundColor: '#90e0ef',
+          }]
         },
         options: {
           responsive: true,
@@ -186,14 +176,12 @@ permalink: /sobre-mi/
           plugins: {
             legend: { display: false },
             tooltip: {
-              callbacks: {
-                label: (ctx) => ' ' + ctx.raw + '%'
-              },
-              backgroundColor: '#1a0000',
-              borderColor: '#cc0000',
+              callbacks: { label: (ctx) => ' ' + ctx.raw + '%' },
+              backgroundColor: '#050f1a',
+              borderColor: '#00b4d8',
               borderWidth: 1,
-              titleColor: '#f5e0e0',
-              bodyColor: '#ff4444',
+              titleColor: '#dff0f8',
+              bodyColor: '#48cae4',
               titleFont: { family: 'JetBrains Mono', size: 12 },
               bodyFont: { family: 'JetBrains Mono', size: 13, weight: '500' },
               padding: 10,
@@ -206,29 +194,20 @@ permalink: /sobre-mi/
               ticks: {
                 stepSize: 25,
                 display: true,
-                color: 'rgba(200, 30, 30, 0.5)',
+                color: 'rgba(0, 180, 216, 0.5)',
                 backdropColor: 'transparent',
                 font: { family: 'JetBrains Mono', size: 10 },
                 callback: (v) => v + '%'
               },
-              grid: {
-                color: 'rgba(200, 30, 30, 0.2)',
-                lineWidth: 1,
-              },
-              angleLines: {
-                color: 'rgba(200, 30, 30, 0.25)',
-                lineWidth: 1,
-              },
+              grid: { color: 'rgba(0, 180, 216, 0.2)', lineWidth: 1 },
+              angleLines: { color: 'rgba(0, 180, 216, 0.25)', lineWidth: 1 },
               pointLabels: {
-                color: '#f5e0e0',
+                color: '#dff0f8',
                 font: { family: 'JetBrains Mono', size: 12, weight: '500' }
               }
             }
           },
-          animation: {
-            duration: 1800,
-            easing: 'easeInOutQuart'
-          }
+          animation: { duration: 1800, easing: 'easeInOutQuart' }
         }
       });
     });
@@ -243,13 +222,11 @@ permalink: /sobre-mi/
       <h3>Rigor Técnico</h3>
       <p>Cada investigación sigue un proceso estructurado y documentado, garantizando resultados reproducibles y verificables.</p>
     </div>
-
     <div class="card">
       <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">02</div>
       <h3>Ética Profesional</h3>
       <p>Respeto absoluto por la privacidad y uso responsable de la información pública disponible.</p>
     </div>
-
     <div class="card">
       <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">03</div>
       <h3>Aprendizaje Continuo</h3>
@@ -280,7 +257,6 @@ permalink: /sobre-mi/
       100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
     }
   </style>
-
   <h2>Vamos a Conectar</h2>
   <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
     ¿Interesado en colaborar o simplemente charlar sobre OSINT?
