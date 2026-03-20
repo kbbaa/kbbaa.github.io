@@ -21,7 +21,6 @@ defaults:
       layout: default
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
