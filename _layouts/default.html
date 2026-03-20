@@ -34,18 +34,18 @@
        VARIABLES
     ============================================================ */
     :root {
-      --bg-body: #070f14;
-      --bg-primary: #0a1520;
-      --bg-primary-rgb: 10, 21, 32;
-      --bg-secondary: #0f2030;
-      --text-body: #8ab0c8;
-      --text-primary: #dff0f8;
-      --text-secondary: #4a7a9b;
-      --accent-primary: #00b4d8;
-      --accent-hover: #48cae4;
-      --border-color: #0e3352;
-      --highlight-bg: #081828;
-      --shadow-color: rgba(0,150,200,0.12);
+      --bg-body: #f0f7fa;
+      --bg-primary: #ffffff;
+      --bg-primary-rgb: 255, 255, 255;
+      --bg-secondary: #e2f0f7;
+      --text-body: #2a5570;
+      --text-primary: #0a2a3a;
+      --text-secondary: #3a7a9b;
+      --accent-primary: #0077b6;
+      --accent-hover: #00b4d8;
+      --border-color: #b0d4e8;
+      --highlight-bg: #dff0f8;
+      --shadow-color: rgba(0,119,182,0.10);
     }
     [data-theme="dark"] {
       --bg-body: #020c14;
@@ -334,8 +334,10 @@
       .pulse-dot    { animation: none !important; }
       .reveal       { opacity: 1 !important; transform: none !important; }
     }
-    .bg-blob-1 { top: -25%; left: -25%; background: radial-gradient(circle, #0077b6, transparent); }
-    .bg-blob-2 { bottom: -25%; right: -25%; background: radial-gradient(circle, #023e8a, transparent); animation-delay: -8s; }
+    .bg-blob-1 { top: -25%; left: -25%; background: radial-gradient(circle, #90e0ef, transparent); }
+    .bg-blob-2 { bottom: -25%; right: -25%; background: radial-gradient(circle, #caf0f8, transparent); animation-delay: -8s; }
+    [data-theme="dark"] .bg-blob-1 { background: radial-gradient(circle, #0077b6, transparent); }
+    [data-theme="dark"] .bg-blob-2 { background: radial-gradient(circle, #023e8a, transparent); }
     @keyframes floatGlow {
       0%   { transform: translate(0,0) scale(1); }
       100% { transform: translate(4%,4%) scale(1.08); }
