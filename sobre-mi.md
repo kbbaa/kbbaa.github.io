@@ -65,11 +65,6 @@ permalink: /sobre-mi/
     </div>
   </div>
 
-  <div style="margin-top: 2rem;">
-    <a href="{{ '/assets/pdf/cv-biel.pdf' | relative_url }}" class="btn-primary" download>
-      Descargar CV (PDF)
-    </a>
-  </div>
 </div>
 
 <section>
