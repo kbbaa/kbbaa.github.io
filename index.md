@@ -13,16 +13,14 @@ title: Biel Rosales | OSINT & Ciberseguridad
     color: var(--accent-primary);
     transform: translateY(-5px) scale(1.2);
     filter: drop-shadow(0 0 8px var(--accent-primary));
-    /* La vibración comienza tras 0.5s de hover */
     animation: shake 0.2s infinite;
     animation-delay: 0.5s;
   }
-
   @keyframes shake {
-    0% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-    25% { transform: translateY(-5px) scale(1.2) rotate(3deg); }
-    50% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-    75% { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
+    0%   { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+    25%  { transform: translateY(-5px) scale(1.2) rotate(3deg); }
+    50%  { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+    75%  { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
     100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
   }
 </style>
@@ -77,12 +75,12 @@ title: Biel Rosales | OSINT & Ciberseguridad
 <section class="carousel-section" style="text-align: center;">
   <div class="carousel-glow carousel-glow-1"></div>
   <div class="carousel-glow carousel-glow-2"></div>
-  
+
   <h2>Últimos Writeups OSINT</h2>
-  
+
   <div class="carousel-container">
     <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="Anterior">&#8249;</button>
-    
+
     <div class="carousel-wrapper">
       <div class="carousel-track" id="carouselTrack">
         {% assign latest_posts = site.posts | slice: 0, 3 %}
@@ -151,14 +149,10 @@ title: Biel Rosales | OSINT & Ciberseguridad
     const prevBtn = document.getElementById('carouselPrev');
     const nextBtn = document.getElementById('carouselNext');
     const dotsContainer = document.getElementById('carouselDots');
-
     if (!track) return;
-
     const slides = track.querySelectorAll('.carousel-slide');
     const total = slides.length;
     let current = 0;
-
-    // Build dots
     function buildDots() {
       dotsContainer.innerHTML = '';
       for (let i = 0; i < total; i++) {
@@ -169,26 +163,20 @@ title: Biel Rosales | OSINT & Ciberseguridad
         dotsContainer.appendChild(dot);
       }
     }
-
     function updateDots() {
       dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
         d.classList.toggle('active', i === current);
       });
     }
-
     function goTo(index) {
-      // Cyclic: wrap around
       current = ((index % total) + total) % total;
       const slideWidth = slides[0].getBoundingClientRect().width;
       track.style.transform = `translateX(-${current * slideWidth}px)`;
       updateDots();
     }
-
     prevBtn.addEventListener('click', () => goTo(current - 1));
     nextBtn.addEventListener('click', () => goTo(current + 1));
-
     window.addEventListener('resize', () => goTo(current));
-
     buildDots();
     goTo(0);
   })();
