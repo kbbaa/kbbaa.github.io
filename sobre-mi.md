@@ -258,7 +258,7 @@ permalink: /sobre-mi/
       <!-- Skill 3 -->
       <div class="skill-item" data-percent="85">
         <div class="skill-info">
-          <span class="skill-name"><span>🛠️</span> Analytic Tools</span>
+          <span class="skill-name"><span>🛠️</span> HUMINT & Social Engineering</span>
         </div>
         <div class="progress-bar-container">
           <div class="progress-fill" style="--target-width: 85%;"></div>
