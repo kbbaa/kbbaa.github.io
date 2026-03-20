@@ -82,38 +82,13 @@ permalink: /sobre-mi/
 
 <section>
   <h2 style="text-align: center; margin-bottom: 3rem;">Habilidades Técnicas</h2>
-  
+
   <style>
     .skills-outer-container {
       position: relative;
-      max-width: 850px;
-      margin: 4rem auto;
-      padding: 2rem;
-    }
-
-    .skills-glow-blob {
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-      filter: blur(100px);
-      z-index: -1;
-      opacity: 0.4;
-    }
-    .blob-blue {
-      top: -100px;
-      left: -100px;
-      background: rgba(180, 0, 0, 0.5);
-    }
-    .blob-purple {
-      bottom: -100px;
-      right: -100px;
-      background: rgba(100, 0, 0, 0.4);
-    }
-
-    .skills-wrapper {
-      position: relative;
-      padding: 3rem 2.5rem;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2.5rem 2rem;
       background: linear-gradient(135deg, rgba(17, 0, 0, 0.85), rgba(140, 0, 0, 0.15));
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
@@ -123,7 +98,7 @@ permalink: /sobre-mi/
       overflow: hidden;
     }
 
-    .skills-wrapper::before {
+    .skills-outer-container::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
@@ -132,191 +107,129 @@ permalink: /sobre-mi/
       z-index: 2;
     }
 
-    .skill-item {
-      margin-bottom: 2.5rem;
-      position: relative;
-    }
-
-    .skill-info {
+    .radar-legend {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.8rem;
-    }
-
-    .skill-name {
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 600;
-      font-size: 1rem;
-      color: #f5e0e0;
-      display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       gap: 12px;
+      justify-content: center;
+      margin-top: 1.5rem;
     }
 
-    .progress-bar-container {
-      width: 100%;
-      height: 14px;
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 100vw;
-      overflow: hidden;
-      border: 1px solid rgba(200, 30, 30, 0.15);
-      position: relative;
-    }
-
-    .progress-fill {
-      height: 100%;
-      width: 0;
-      background: linear-gradient(90deg, #8b0000, #e02020, #ff4444);
-      border-radius: 100vw;
-      position: relative;
-      transition: width 2.5s cubic-bezier(0.22, 1, 0.36, 1);
-      box-shadow: 0 0 12px rgba(220, 30, 30, 0.5);
-    }
-
-    .progress-fill::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-      animation: barScan 3s infinite;
-    }
-
-    @keyframes barScan {
-      0%   { transform: translateX(-100%); }
-      100% { transform: translateX(100%); }
-    }
-
-    .skill-tooltip {
-      position: absolute;
-      bottom: 28px;
-      left: 0;
-      transform: translateX(-50%);
-      background: #cc0000;
-      color: white;
-      padding: 4px 10px;
-      border-radius: 6px;
+    .radar-legend span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #f5e0e0;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      font-weight: 800;
-      opacity: 0;
-      transition:
-        opacity 0.6s ease-out,
-        left 2.5s cubic-bezier(0.22, 1, 0.36, 1);
-      pointer-events: none;
-      z-index: 10;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
 
-    .skill-tooltip::after {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 6px solid transparent;
-      border-top-color: #cc0000;
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      background: #cc0000;
+      display: inline-block;
     }
-
-    .animate .progress-fill  { width: var(--target-width); }
-    .animate .skill-tooltip  { opacity: 1; left: var(--target-width); }
 
     @media (max-width: 768px) {
-      .skills-outer-container { padding: 1rem; margin: 2rem auto; }
-      .skills-wrapper { padding: 2rem 1.5rem; }
-      .skills-glow-blob { width: 250px; height: 250px; }
+      .skills-outer-container {
+        padding: 1.5rem 1rem;
+        margin: 1rem auto;
+      }
     }
   </style>
 
   <div class="skills-outer-container">
-    <div class="skills-glow-blob blob-blue"></div>
-    <div class="skills-glow-blob blob-purple"></div>
-
-    <div class="skills-wrapper" id="skillsSection">
-      <!-- Skill 1 -->
-      <div class="skill-item" data-percent="95">
-        <div class="skill-info">
-          <span class="skill-name"><span>🔋</span> OSINT Core</span>
-        </div>
-        <div class="progress-bar-container">
-          <div class="progress-fill" style="--target-width: 95%;"></div>
-        </div>
-        <div class="skill-tooltip" style="--target-width: 95%;">95%</div>
-      </div>
-
-      <!-- Skill 2 -->
-      <div class="skill-item" data-percent="90">
-        <div class="skill-info">
-          <span class="skill-name"><span>🗺</span> Geolocation</span>
-        </div>
-        <div class="progress-bar-container">
-          <div class="progress-fill" style="--target-width: 90%;"></div>
-        </div>
-        <div class="skill-tooltip" style="--target-width: 90%;">90%</div>
-      </div>
-
-      <!-- Skill 3 -->
-      <div class="skill-item" data-percent="85">
-        <div class="skill-info">
-          <span class="skill-name"><span>🛠️</span> HUMINT & Social Engineering</span>
-        </div>
-        <div class="progress-bar-container">
-          <div class="progress-fill" style="--target-width: 85%;"></div>
-        </div>
-        <div class="skill-tooltip" style="--target-width: 85%;">85%</div>
-      </div>
-
-      <!-- Skill 4 -->
-      <div class="skill-item" data-percent="80">
-        <div class="skill-info">
-          <span class="skill-name"><span>🔍</span> IMINIT</span>
-        </div>
-        <div class="progress-bar-container">
-          <div class="progress-fill" style="--target-width: 80%;"></div>
-        </div>
-        <div class="skill-tooltip" style="--target-width: 80%;">80%</div>
-      </div>
-
-      <!-- Skill 5 -->
-      <div class="skill-item" data-percent="75">
-        <div class="skill-info">
-          <span class="skill-name"><span>🖤</span>Dark Web Investigation</span>
-        </div>
-        <div class="progress-bar-container">
-          <div class="progress-fill" style="--target-width: 75%;"></div>
-        </div>
-        <div class="skill-tooltip" style="--target-width: 75%;">75%</div>
-      </div>
-
-      <!-- Skill 6 -->
-      <div class="skill-item" data-percent="88">
-        <div class="skill-info">
-          <span class="skill-name"><span>👩🏻‍💻</span> Malware Analysis</span>
-        </div>
-        <div class="progress-bar-container">
-          <div class="progress-fill" style="--target-width: 88%;"></div>
-        </div>
-        <div class="skill-tooltip" style="--target-width: 88%;">88%</div>
-      </div>
+    <div style="position: relative; width: 100%; height: 420px;">
+      <canvas id="radarChart"></canvas>
+    </div>
+    <div class="radar-legend">
+      <span><i class="legend-dot"></i>Nivel actual</span>
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const observerOptions = {
-        threshold: 0.2
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('radarChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: [
+            'OSINT Core',
+            'Geolocation',
+            'HUMINT & Social Eng.',
+            'IMINIT',
+            'Dark Web Investigation',
+            'Malware Analysis'
+          ],
+          datasets: [
+            {
+              label: 'Nivel actual',
+              data: [95, 90, 85, 80, 75, 88],
+              backgroundColor: 'rgba(204, 0, 0, 0.25)',
+              borderColor: '#cc0000',
+              borderWidth: 2,
+              pointBackgroundColor: '#ff4444',
+              pointBorderColor: '#8b0000',
+              pointBorderWidth: 2,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointHoverBackgroundColor: '#ff6666',
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ' ' + ctx.raw + '%'
+              },
+              backgroundColor: '#1a0000',
+              borderColor: '#cc0000',
+              borderWidth: 1,
+              titleColor: '#f5e0e0',
+              bodyColor: '#ff4444',
+              titleFont: { family: 'JetBrains Mono', size: 12 },
+              bodyFont: { family: 'JetBrains Mono', size: 13, weight: '500' },
+              padding: 10,
+            }
+          },
+          scales: {
+            r: {
+              min: 0,
+              max: 100,
+              ticks: {
+                stepSize: 25,
+                display: true,
+                color: 'rgba(200, 30, 30, 0.5)',
+                backdropColor: 'transparent',
+                font: { family: 'JetBrains Mono', size: 10 },
+                callback: (v) => v + '%'
+              },
+              grid: {
+                color: 'rgba(200, 30, 30, 0.2)',
+                lineWidth: 1,
+              },
+              angleLines: {
+                color: 'rgba(200, 30, 30, 0.25)',
+                lineWidth: 1,
+              },
+              pointLabels: {
+                color: '#f5e0e0',
+                font: { family: 'JetBrains Mono', size: 12, weight: '500' }
+              }
+            }
+          },
+          animation: {
+            duration: 1800,
+            easing: 'easeInOutQuart'
           }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll('.skill-item').forEach(item => {
-        observer.observe(item);
+        }
       });
     });
   </script>
@@ -360,10 +273,10 @@ permalink: /sobre-mi/
       animation-delay: 0.5s;
     }
     @keyframes shake {
-      0% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-      25% { transform: translateY(-5px) scale(1.2) rotate(3deg); }
-      50% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-      75% { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
+      0%   { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+      25%  { transform: translateY(-5px) scale(1.2) rotate(3deg); }
+      50%  { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+      75%  { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
       100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
     }
   </style>
