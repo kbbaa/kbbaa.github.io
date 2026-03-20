@@ -236,7 +236,7 @@ permalink: /sobre-mi/
       <!-- Skill 1 -->
       <div class="skill-item" data-percent="95">
         <div class="skill-info">
-          <span class="skill-name"><span>📍</span> OSINT Core</span>
+          <span class="skill-name"><span>🔋</span> OSINT Core</span>
         </div>
         <div class="progress-bar-container">
           <div class="progress-fill" style="--target-width: 95%;"></div>
@@ -247,7 +247,7 @@ permalink: /sobre-mi/
       <!-- Skill 2 -->
       <div class="skill-item" data-percent="90">
         <div class="skill-info">
-          <span class="skill-name"><span>🌍</span> Geolocation</span>
+          <span class="skill-name"><span>🗺</span> Geolocation</span>
         </div>
         <div class="progress-bar-container">
           <div class="progress-fill" style="--target-width: 90%;"></div>
@@ -269,7 +269,7 @@ permalink: /sobre-mi/
       <!-- Skill 4 -->
       <div class="skill-item" data-percent="80">
         <div class="skill-info">
-          <span class="skill-name"><span>💻</span> Technical Skills</span>
+          <span class="skill-name"><span>🔍</span> IMINIT</span>
         </div>
         <div class="progress-bar-container">
           <div class="progress-fill" style="--target-width: 80%;"></div>
@@ -280,7 +280,7 @@ permalink: /sobre-mi/
       <!-- Skill 5 -->
       <div class="skill-item" data-percent="75">
         <div class="skill-info">
-          <span class="skill-name"><span>🕸️</span> Web Scraping</span>
+          <span class="skill-name"><span>🖤</span>Dark Web Investigation</span>
         </div>
         <div class="progress-bar-container">
           <div class="progress-fill" style="--target-width: 75%;"></div>
@@ -291,7 +291,7 @@ permalink: /sobre-mi/
       <!-- Skill 6 -->
       <div class="skill-item" data-percent="88">
         <div class="skill-info">
-          <span class="skill-name"><span>📊</span> Data Analysis</span>
+          <span class="skill-name"><span>👩🏻‍💻</span> Malware Analysis</span>
         </div>
         <div class="progress-bar-container">
           <div class="progress-fill" style="--target-width: 88%;"></div>
