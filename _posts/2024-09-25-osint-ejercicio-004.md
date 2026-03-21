@@ -3,8 +3,8 @@ layout: default
 title: "Ejercicio OSINT #004 – Complejo turístico en una isla"
 date: 2024-09-25
 tags: [gralhix, osint, geolocalizacion, imagenes, turismo]
+hidden: true
 ---
-
 <div class="investigating-container">
   <div class="investigating-card">
     <h1>Investigándose... 🔍</h1>
@@ -16,7 +16,6 @@ tags: [gralhix, osint, geolocalizacion, imagenes, turismo]
     </div>
   </div>
 </div>
-
 <style>
 @keyframes pulse {
   0% { transform: scale(1); opacity: 1; }
