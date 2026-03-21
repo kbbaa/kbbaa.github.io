@@ -175,7 +175,7 @@ permalink: /retos/
     <div class="branch-line branch-gralhix"></div>
     <div class="platform-content">
       <div class="platform-grid">
-        {% assign gralhix_posts = site.posts | where_exp: "post", "post.tags contains 'gralhix'" | reverse %}
+        {% assign gralhix_posts = site.posts | where_exp: "post", "post.tags contains 'gralhix'" | where_exp: "post", "post.hidden != true" | reverse %}
         {% for post in gralhix_posts %}
         <div class="card">
           <div class="card-date">{{ post.date | date: "%d de %B, %Y" }}</div>
@@ -188,6 +188,11 @@ permalink: /retos/
           </div>
         </div>
         {% endfor %}
+        {% if gralhix_posts.size == 0 %}
+        <p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">
+          Próximamente retos de Gralhix.
+        </p>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -200,7 +205,7 @@ permalink: /retos/
     <div class="branch-line branch-thm"></div>
     <div class="platform-content">
       <div class="platform-grid">
-        {% assign thm_posts = site.posts | where_exp: "post", "post.tags contains 'tryhackme'" | reverse %}
+        {% assign thm_posts = site.posts | where_exp: "post", "post.tags contains 'tryhackme'" | where_exp: "post", "post.hidden != true" | reverse %}
         {% for post in thm_posts %}
         <div class="card">
           <div class="card-date">{{ post.date | date: "%d de %B, %Y" }}</div>
@@ -230,7 +235,7 @@ permalink: /retos/
     <div class="branch-line branch-htb"></div>
     <div class="platform-content">
       <div class="platform-grid">
-        {% assign htb_posts = site.posts | where_exp: "post", "post.tags contains 'hackthebox'" | reverse %}
+        {% assign htb_posts = site.posts | where_exp: "post", "post.tags contains 'hackthebox'" | where_exp: "post", "post.hidden != true" | reverse %}
         {% for post in htb_posts %}
         <div class="card">
           <div class="card-date">{{ post.date | date: "%d de %B, %Y" }}</div>
@@ -260,7 +265,7 @@ permalink: /retos/
     <div class="branch-line branch-uk"></div>
     <div class="platform-content">
       <div class="platform-grid">
-        {% assign uk_posts = site.posts | where_exp: "post", "post.tags contains 'uk-osint'" | reverse %}
+        {% assign uk_posts = site.posts | where_exp: "post", "post.tags contains 'uk-osint'" | where_exp: "post", "post.hidden != true" | reverse %}
         {% for post in uk_posts %}
         <div class="card">
           <div class="card-date">{{ post.date | date: "%d de %B, %Y" }}</div>
