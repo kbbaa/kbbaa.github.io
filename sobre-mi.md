@@ -37,7 +37,7 @@ permalink: /sobre-mi/
     <img src="{{ '/assets/img/oso1.png' | relative_url }}" alt="Biel Rosales" class="avatar-img">
   </div>
   <h1><span class="neon-text">kbaa</span></h1>
-  <p>OSINT Investigator apasionado por el análisis de fuentes abiertas y la verificación de información digital</p>
+  <p>19 años. Estudiante de FP Grado Superior en Ciberseguridad. Apasionado del OSINT y de entender cómo se construye una investigación desde cero.</p>
 
   <div class="terminal-container" style="max-width: 600px; margin: 2rem auto; text-align: left;">
     <div class="terminal-header">
@@ -51,15 +51,18 @@ permalink: /sobre-mi/
         <span class="terminal-prompt">$</span>
         <span class="terminal-command">whoami</span>
       </div>
-      <div class="terminal-output">Biel Rosales - OSINT Specialist & Cybersecurity Analyst</div>
+      <div class="terminal-output">Biel Rosales — FP Ciberseguridad · OSINT autodidacta · Barcelona</div>
       <div class="terminal-line">
         <span class="terminal-prompt">$</span>
-        <span class="terminal-command">cat skills.json</span>
+        <span class="terminal-command">cat perfil.json</span>
       </div>
       <div class="terminal-output">
         {<br>
-        &nbsp;&nbsp;"focus": ["OSINT", "Open-Source-Analyst", "Geolocation", "Fact-checking"],<br>
-        &nbsp;&nbsp;"status": "Active_Investigation"<br>
+        &nbsp;&nbsp;"edad": 19,<br>
+        &nbsp;&nbsp;"estado": "Finalizando FP Grado Superior",<br>
+        &nbsp;&nbsp;"enfoque": ["OSINT", "Google Dorks", "SOCMINT", "Geolocalización"],<br>
+        &nbsp;&nbsp;"objetivo": "Trabajar en inteligencia de fuentes abiertas",<br>
+        &nbsp;&nbsp;"writeups": "100% resueltos de forma independiente"<br>
         }
       </div>
     </div>
@@ -70,7 +73,11 @@ permalink: /sobre-mi/
 <section>
   <div class="highlight-box">
     <p style="font-size: 1.1rem; margin: 0; line-height: 1.8;">
-      Me especializo en <strong>Open Source Intelligence (OSINT)</strong>, aplicando metodologías estructuradas para la recolección, análisis y verificación de información de fuentes públicas. Mi enfoque combina habilidades técnicas con pensamiento crítico para resolver retos complejos de investigación digital.
+      Tengo 19 años y estoy finalizando un <strong>Grado Superior en Ciberseguridad</strong>. Desde el principio lo que más me atrajo del sector no fue solo la técnica, sino entender cómo suceden las cosas: cómo se construye una investigación desde cero, cómo se conectan puntos que a primera vista no tienen relación.
+      <br><br>
+      Eso me llevó al OSINT de forma natural. Me di cuenta de que con un nombre, una red social, o cualquier dato aparentemente insignificante, se puede reconstruir una huella digital completa. Lo que para otros es un callejón sin salida, para mí es el punto de partida.
+      <br><br>
+      Trabajo principalmente con <strong>Google Dorks, SOCMINT</strong> y análisis de redes sociales, combinando herramientas según lo que cada investigación requiere. Todos los writeups de este portfolio los he resuelto de forma <strong>completamente independiente</strong>, aplicando metodología propia. Actualmente me estoy formando de manera autodidacta en OSINT avanzado y evaluando especializaciones del sector.
     </p>
   </div>
 </section>
@@ -122,6 +129,14 @@ permalink: /sobre-mi/
       background: #00b4d8;
       display: inline-block;
     }
+    .radar-disclaimer {
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(0, 180, 216, 0.5);
+      margin-top: 1rem;
+      letter-spacing: 0.5px;
+    }
     @media (max-width: 768px) {
       .skills-outer-container { padding: 1.5rem 1rem; margin: 1rem auto; }
     }
@@ -132,8 +147,9 @@ permalink: /sobre-mi/
       <canvas id="radarChart"></canvas>
     </div>
     <div class="radar-legend">
-      <span><i class="legend-dot"></i>Nivel actual</span>
+      <span><i class="legend-dot"></i>Nivel actual (autoevaluación honesta)</span>
     </div>
+    <p class="radar-disclaimer">// Nivel 100 = experto profesional con años de experiencia en entorno real</p>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
@@ -144,16 +160,16 @@ permalink: /sobre-mi/
         type: 'radar',
         data: {
           labels: [
-            'OSINT Core',
-            'Geolocation',
-            'HUMINT & Social Eng.',
-            'IMINIT',
-            'Dark Web Investigation',
-            'Malware Analysis'
+            'Google Dorks',
+            'SOCMINT',
+            'Geolocalización / IMINT',
+            'Análisis de metadatos',
+            'HUMINT digital',
+            'Dark Web / OPSEC'
           ],
           datasets: [{
             label: 'Nivel actual',
-            data: [95, 90, 85, 80, 75, 88],
+            data: [72, 68, 65, 55, 50, 30],
             backgroundColor: 'rgba(0, 180, 216, 0.18)',
             borderColor: '#00b4d8',
             borderWidth: 2,
@@ -171,7 +187,7 @@ permalink: /sobre-mi/
           plugins: {
             legend: { display: false },
             tooltip: {
-              callbacks: { label: (ctx) => ' ' + ctx.raw + '%' },
+              callbacks: { label: (ctx) => ' ' + ctx.raw + '/100' },
               backgroundColor: '#050f1a',
               borderColor: '#00b4d8',
               borderWidth: 1,
@@ -192,7 +208,7 @@ permalink: /sobre-mi/
                 color: 'rgba(0, 180, 216, 0.5)',
                 backdropColor: 'transparent',
                 font: { family: 'JetBrains Mono', size: 10 },
-                callback: (v) => v + '%'
+                callback: (v) => v
               },
               grid: { color: 'rgba(0, 180, 216, 0.2)', lineWidth: 1 },
               angleLines: { color: 'rgba(0, 180, 216, 0.25)', lineWidth: 1 },
@@ -210,22 +226,22 @@ permalink: /sobre-mi/
 </section>
 
 <section>
-  <h2 style="text-align: center;">Metodología de Trabajo</h2>
+  <h2 style="text-align: center;">Cómo trabajo</h2>
   <div class="grid">
     <div class="card">
       <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">01</div>
-      <h3>Rigor Técnico</h3>
-      <p>Cada investigación sigue un proceso estructurado y documentado, garantizando resultados reproducibles y verificables.</p>
+      <h3>Empiezo con poco</h3>
+      <p>Un nombre, un alias, una foto. Me interesa lo que otros descartan: los datos que parecen no llevar a ningún sitio suelen ser el mejor punto de partida.</p>
     </div>
     <div class="card">
       <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">02</div>
-      <h3>Ética Profesional</h3>
-      <p>Respeto absoluto por la privacidad y uso responsable de la información pública disponible.</p>
+      <h3>Conecto los puntos</h3>
+      <p>OSINT es sobre relaciones entre datos, no datos aislados. Busco vínculos entre perfiles, familiares, metadatos y huellas digitales para construir el mapa completo.</p>
     </div>
     <div class="card">
       <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">03</div>
-      <h3>Aprendizaje Continuo</h3>
-      <p>Constante actualización en técnicas, herramientas y metodologías de investigación OSINT.</p>
+      <h3>Documento todo</h3>
+      <p>Cada investigación queda registrada con metodología, herramientas y razonamiento. Si no puedes reproducirlo, no puedes verificarlo.</p>
     </div>
   </div>
 </section>
@@ -252,9 +268,9 @@ permalink: /sobre-mi/
       100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
     }
   </style>
-  <h2>Vamos a Conectar</h2>
+  <h2>Contacto</h2>
   <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
-    ¿Interesado en colaborar o simplemente charlar sobre OSINT?
+    ¿Tienes un proyecto, una propuesta o simplemente quieres hablar de OSINT?
   </p>
   <div class="social-links" style="justify-content: center; gap: 3rem; display: flex;">
     <a href="https://github.com/kbbaa" target="_blank" title="GitHub" class="hero-social-link">
