@@ -61,7 +61,7 @@ title: Biel Rosales | OSINT & Ciberseguridad
   <div class="hero-scanner"></div>
   <h1>Biel Rosales</h1>
   <p style="font-size: 1.3rem; color: var(--accent-primary); font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">
-    OSINT · Ciberseguridad · FP Grado Superior
+    OSINT · Ciberseguridad
   </p>
   <p style="max-width: 600px; margin: 0 auto 1.5rem;">
     19 años. Aprendo investigando. Cada writeup de este portfolio lo he resuelto de forma independiente, desde cero, sin ayuda externa.
@@ -172,9 +172,6 @@ title: Biel Rosales | OSINT & Ciberseguridad
   </div>
 
   <div class="carousel-dots" id="carouselDots"></div>
-  <div style="margin-top: 2rem;">
-    <a href="{{ '/retos' | relative_url }}" class="btn-secondary" style="font-size: 0.9rem;">Ver todos los writeups →</a>
-  </div>
 </section>
 
 <script>
