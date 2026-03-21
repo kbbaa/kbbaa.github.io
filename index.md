@@ -23,13 +23,65 @@ title: Biel Rosales | OSINT & Ciberseguridad
     75%  { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
     100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
   }
+
+  .stat-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  .stat-box {
+    background: rgba(0, 180, 216, 0.06);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    min-width: 100px;
+  }
+  .stat-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00b4d8;
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
 </style>
 
 <div class="hero">
   <div class="hero-scanner"></div>
   <h1>Biel Rosales</h1>
-  <p style="font-size: 1.5rem; color: var(--accent-primary); font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem;">Especialista en OSINT & Analista de Ciberseguridad</p>
-  <p>Investigación técnica, geolocalización avanzada y verificación de activos digitales con rigor analítico.</p>
+  <p style="font-size: 1.3rem; color: var(--accent-primary); font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">
+    OSINT · Ciberseguridad · FP Grado Superior
+  </p>
+  <p style="max-width: 600px; margin: 0 auto 1.5rem;">
+    19 años. Aprendo investigando. Cada writeup de este portfolio lo he resuelto de forma independiente, desde cero, sin ayuda externa.
+  </p>
+
+  <div class="stat-grid">
+    <div class="stat-box">
+      <span class="stat-number">8+</span>
+      <span class="stat-label">Writeups</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">4</span>
+      <span class="stat-label">Plataformas</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Resolución propia</span>
+    </div>
+  </div>
+
   <div class="social-links" style="margin-bottom: 2rem; justify-content: center; gap: 2.5rem; display: flex;">
     <a href="https://github.com/kbbaa" target="_blank" title="GitHub" class="hero-social-link">
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.003-.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -42,7 +94,8 @@ title: Biel Rosales | OSINT & Ciberseguridad
     </a>
   </div>
   <div class="hero-buttons">
-    <a href="{{ '/retos' | relative_url }}" class="btn-primary">Ver Investigaciones</a>
+    <a href="{{ '/retos' | relative_url }}" class="btn-primary">Ver Writeups</a>
+    <a href="{{ '/sobre-mi' | relative_url }}" class="btn-secondary">Sobre mí</a>
   </div>
 </div>
 
@@ -53,21 +106,21 @@ title: Biel Rosales | OSINT & Ciberseguridad
         <img src="{{ '/assets/img/lupa.png' | relative_url }}" alt="Investigación" style="height: 60px; width: auto;">
       </div>
       <h3>Investigación</h3>
-      <p>Metodologías estructuradas para la recolección de inteligencia técnica y corporativa.</p>
+      <p>Parto de un dato mínimo — un nombre, una imagen, un alias — y construyo el mapa completo conectando fuentes públicas.</p>
     </div>
     <div class="card" style="text-align: center; padding: 2rem;">
       <div style="margin-bottom: 1rem;">
         <img src="{{ '/assets/img/mapa.png' | relative_url }}" alt="Geolocalización" style="height: 60px; width: auto;">
       </div>
       <h3>Geolocalización</h3>
-      <p>Análisis geoespacial y verificación de imágenes mediante técnicas de IMINT avanzadas.</p>
+      <p>Análisis visual de imágenes para determinar ubicaciones mediante IMINT: sombras, arquitectura, señalización y contexto.</p>
     </div>
     <div class="card" style="text-align: center; padding: 2rem;">
       <div style="margin-bottom: 1rem;">
         <img src="{{ '/assets/img/escudo.png' | relative_url }}" alt="Ciberseguridad" style="height: 60px; width: auto;">
       </div>
-      <h3>Ciberseguridad</h3>
-      <p>Identificación de superficies de ataque y fugas de información sensible.</p>
+      <h3>SOCMINT & Dorks</h3>
+      <p>Extracción de inteligencia desde redes sociales y búsquedas avanzadas. Google Dorks aplicados a investigaciones reales.</p>
     </div>
   </div>
 </section>
@@ -111,28 +164,6 @@ title: Biel Rosales | OSINT & Ciberseguridad
               </div>
             </div>
           </div>
-          <div class="carousel-slide">
-            <div class="carousel-card">
-              <div class="carousel-date">21 de Enero, 2026</div>
-              <h3><a href="{{ '/retos' | relative_url }}" class="stretched-link">Ejercicio OSINT #003</a></h3>
-              <p>Identificación de monumentos y análisis de fuentes abiertas.</p>
-              <div class="carousel-tags">
-                <span class="tag">osint</span>
-                <span class="tag">monumentos</span>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <div class="carousel-card">
-              <div class="carousel-date">18 de Enero, 2026</div>
-              <h3><a href="{{ '/retos' | relative_url }}" class="stretched-link">Ejercicio OSINT #007</a></h3>
-              <p>Ubicación de fotografía mediante análisis forense visual.</p>
-              <div class="carousel-tags">
-                <span class="tag">osint</span>
-                <span class="tag">analisis-visual</span>
-              </div>
-            </div>
-          </div>
         {% endif %}
       </div>
     </div>
@@ -141,6 +172,9 @@ title: Biel Rosales | OSINT & Ciberseguridad
   </div>
 
   <div class="carousel-dots" id="carouselDots"></div>
+  <div style="margin-top: 2rem;">
+    <a href="{{ '/retos' | relative_url }}" class="btn-secondary" style="font-size: 0.9rem;">Ver todos los writeups →</a>
+  </div>
 </section>
 
 <script>
