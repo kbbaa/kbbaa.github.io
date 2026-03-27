@@ -84,6 +84,16 @@ permalink: /retos/
   .branch-uk {
     animation: growLine 0.5s ease-out forwards, rainbow-uk 3s infinite linear !important;
   }
+  .branch-soterctf {
+    animation: growLine 0.5s ease-out forwards, rainbow-soterctf 3s infinite linear !important;
+  }
+
+  @keyframes rainbow-soterctf {
+    0%   { border-color: #7c3aed; filter: drop-shadow(0 0 5px #7c3aed); }
+    33%  { border-color: #a78bfa; filter: drop-shadow(0 0 8px #a78bfa); }
+    66%  { border-color: #9333ea; filter: drop-shadow(0 0 5px #9333ea); }
+    100% { border-color: #7c3aed; filter: drop-shadow(0 0 5px #7c3aed); }
+  }
 
   @keyframes rainbow-blue {
     0%   { border-color: #0ea5e9; filter: drop-shadow(0 0 5px #0ea5e9); }
@@ -281,6 +291,36 @@ permalink: /retos/
         {% if uk_posts.size == 0 %}
         <p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">
           Investigándose... 🔍 (Próximamente retos de UK OSINT)
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="platform-container" id="soterctf-section">
+    <div class="platform-header" onclick="togglePlatform('soterctf-section')">
+      <img src="{{ '/assets/img/soterctf.png' | relative_url }}" alt="SoterCTF" class="platform-logo">
+      <h2 class="platform-title">SoterCTF</h2>
+    </div>
+    <div class="branch-line branch-soterctf"></div>
+    <div class="platform-content">
+      <div class="platform-grid">
+        {% assign soterctf_posts = site.posts | where_exp: "post", "post.tags contains 'soterctf'" | where_exp: "post", "post.hidden != true" | reverse %}
+        {% for post in soterctf_posts %}
+        <div class="card">
+          <div class="card-date">{{ post.date | date: "%d de %B, %Y" }}</div>
+          <h3><a href="{{ post.url }}" class="stretched-link">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | default: "Análisis OSINT detallado con proceso paso a paso y herramientas utilizadas." | strip_html | truncatewords: 20 }}</p>
+          <div class="tags">
+            {% for tag in post.tags %}
+            <span class="tag tag-{{ tag | slugify }}">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+        {% if soterctf_posts.size == 0 %}
+        <p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 2rem;">
+          Investigándose... 🔍 (Próximamente retos de SoterCTF)
         </p>
         {% endif %}
       </div>
