@@ -34,10 +34,10 @@ permalink: /sobre-mi/
   <div class="hero-scanner"></div>
   <div class="avatar-container">
     <div class="avatar-glow"></div>
-    <img src="{{ '/assets/img/oso1.png' | relative_url }}" alt="Biel Rosales" class="avatar-img">
+    <img src="{{ '/assets/img/perfil.jpg' | relative_url }}" alt="Biel Rosales" class="avatar-img">
   </div>
-  <h1><span class="neon-text">kbaa</span></h1>
-  <p>19 años. Estudiante de FP Grado Superior en Ciberseguridad. Apasionado del OSINT y de entender cómo se construye una investigación desde cero.</p>
+  <h1><span class="neon-text">Biel Rosales</span></h1>
+  <p>Estudiante de FP Grado Superior en Ciberseguridad. Especializado en Ciberinteligencia, OSINT y resolución documentada de investigaciones.</p>
 
   <div class="terminal-container" style="max-width: 600px; margin: 2rem auto; text-align: left;">
     <div class="terminal-header">

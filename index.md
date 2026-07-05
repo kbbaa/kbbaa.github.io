@@ -60,25 +60,25 @@ title: Biel Rosales | OSINT & Ciberseguridad
 <div class="hero">
   <div class="hero-scanner"></div>
   <h1>Biel Rosales</h1>
-  <p style="font-size: 1.3rem; color: var(--accent-primary); font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">
-    OSINT · Ciberseguridad
+  <p style="font-size: 1.25rem; color: var(--accent-primary); font-family: 'JetBrains Mono', monospace; margin-bottom: 0.75rem; font-weight: 600;">
+    Analista Junior de Ciberinteligencia & OSINT
   </p>
-  <p style="max-width: 600px; margin: 0 auto 1.5rem;">
-    19 años. Aprendo investigando. Cada writeup de este portfolio lo he resuelto de forma independiente, desde cero, sin ayuda externa.
+  <p style="max-width: 650px; margin: 0 auto 1.5rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+    Especializado en IMINT, SOCMINT, Geolocalización y Automatización de Investigaciones. Transformo datos abiertos en inteligencia accionable y estructurada.
   </p>
 
   <div class="stat-grid">
     <div class="stat-box">
       <span class="stat-number">8+</span>
-      <span class="stat-label">Writeups</span>
+      <span class="stat-label">Informes / Writeups</span>
     </div>
     <div class="stat-box">
-      <span class="stat-number">4</span>
-      <span class="stat-label">Plataformas</span>
+      <span class="stat-number">100+</span>
+      <span class="stat-label">Horas de Lab</span>
     </div>
     <div class="stat-box">
       <span class="stat-number">100%</span>
-      <span class="stat-label">Resolución propia</span>
+      <span class="stat-label">Documentado y Propio</span>
     </div>
   </div>
 
@@ -121,6 +121,119 @@ title: Biel Rosales | OSINT & Ciberseguridad
       </div>
       <h3>SOCMINT & Dorks</h3>
       <p>Extracción de inteligencia desde redes sociales y búsquedas avanzadas. Google Dorks aplicados a investigaciones reales.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Secciones Profesionales Añadidas -->
+
+<section style="margin: 4rem auto; max-width: 1000px; padding: 0 1rem;">
+  <h2 style="text-align: center; margin-bottom: 2.5rem;">Stack Tecnológico & Herramientas</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+    <!-- Categoría 1 -->
+    <div class="card" style="padding: 1.5rem; border-radius: 12px; background: rgba(var(--bg-primary-rgb), 0.4); border: 1px solid var(--border-color);">
+      <h3 style="font-size: 1.2rem; color: var(--accent-primary); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">
+        🔍 Disciplinas OSINT
+      </h3>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">IMINT / GEOINT:</strong> Geolocalización por imágenes y análisis de terreno.</li>
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">SOCMINT:</strong> Análisis e investigación en redes sociales y perfiles digitales.</li>
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">CTI:</strong> Introducción a la Inteligencia de Amenazas y análisis de infraestructura.</li>
+      </ul>
+    </div>
+
+    <!-- Categoría 2 -->
+    <div class="card" style="padding: 1.5rem; border-radius: 12px; background: rgba(var(--bg-primary-rgb), 0.4); border: 1px solid var(--border-color);">
+      <h3 style="font-size: 1.2rem; color: var(--accent-primary); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">
+        🛠️ Herramientas & Búsqueda
+      </h3>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">Búsqueda Avanzada:</strong> Google Dorks avanzados y operadores booleanos.</li>
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">Reconocimiento:</strong> Shodan, Maltego, Whois histórico y DNS.</li>
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">Análisis:</strong> Spiderfoot, Wireshark y herramientas de esteganografía.</li>
+      </ul>
+    </div>
+
+    <!-- Categoría 3 -->
+    <div class="card" style="padding: 1.5rem; border-radius: 12px; background: rgba(var(--bg-primary-rgb), 0.4); border: 1px solid var(--border-color);">
+      <h3 style="font-size: 1.2rem; color: var(--accent-primary); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">
+        💻 Automatización & Sistemas
+      </h3>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">Programación:</strong> Python (Automatización, Scripting y Scraping de datos).</li>
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">Sistemas:</strong> Administración básica de Linux (Kali/Debian) y entornos Bash.</li>
+        <li style="display: flex; align-items: center; gap: 8px;"><strong style="color: var(--text-primary);">Control de Versiones:</strong> Git y flujo de trabajo colaborativo en GitHub.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="margin: 4rem auto; max-width: 1000px; padding: 0 1rem;">
+  <h2 style="text-align: center; margin-bottom: 1rem;">Automatización de Investigaciones</h2>
+  <p style="text-align: center; max-width: 650px; margin: 0 auto 3rem; color: var(--text-secondary);">
+    Para optimizar y acelerar la recopilación de evidencias, desarrollo herramientas personalizadas en Python que automatizan tareas repetitivas durante una investigación.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+    <!-- Proyecto 1 -->
+    <div class="card" style="padding: 2rem; border-radius: 16px; background: rgba(var(--bg-primary-rgb), 0.4); border: 1px solid var(--border-color); position: relative; transition: all 0.3s ease;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; background: rgba(0, 180, 216, 0.15); color: var(--accent-primary); padding: 0.25rem 0.75rem; border-radius: 20px;">Python / Scraping</span>
+        <a href="https://github.com/kbbaa" target="_blank" style="color: var(--text-primary);" aria-label="GitHub Repository">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.003-.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+      <h3 style="margin-bottom: 0.75rem; font-size: 1.3rem;">Herramientas OSINT Personalizadas</h3>
+      <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
+        Desarrollo de scripts de extracción de datos (scrapers), extractores de metadatos de imágenes y herramientas de recolección automatizada de perfiles y menciones.
+      </p>
+      <a href="https://github.com/kbbaa" target="_blank" style="font-size: 0.9rem; font-weight: 600; color: var(--accent-primary); display: inline-flex; align-items: center; gap: 6px;">
+        Ver Repositorio GitHub ↗
+      </a>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="card" style="padding: 2rem; border-radius: 16px; background: rgba(var(--bg-primary-rgb), 0.4); border: 1px solid var(--border-color); position: relative; transition: all 0.3s ease;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; background: rgba(0, 180, 216, 0.15); color: var(--accent-primary); padding: 0.25rem 0.75rem; border-radius: 20px;">Automatización / API</span>
+        <a href="https://github.com/kbbaa" target="_blank" style="color: var(--text-primary);" aria-label="GitHub Repository">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.003-.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+      <h3 style="margin-bottom: 0.75rem; font-size: 1.3rem;">Integración de APIs de Inteligencia</h3>
+      <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
+        Integración y consulta de APIs de reputación de IP, dominios y hash (VirusTotal, Shodan) mediante Python para automatizar el triage inicial de indicadores de compromiso (IOCs).
+      </p>
+      <a href="https://github.com/kbbaa" target="_blank" style="font-size: 0.9rem; font-weight: 600; color: var(--accent-primary); display: inline-flex; align-items: center; gap: 6px;">
+        Ver Repositorio GitHub ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="margin: 4rem auto; max-width: 1000px; padding: 0 1rem;">
+  <h2 style="text-align: center; margin-bottom: 2.5rem;">Educación & Trayectoria</h2>
+  
+  <div style="position: relative; padding-left: 2rem; border-left: 3px solid var(--accent-primary); margin-left: 1rem;">
+    <!-- Evento 1 -->
+    <div style="margin-bottom: 2rem; position: relative;">
+      <div style="position: absolute; left: calc(-2rem - 9px); top: 4px; width: 15px; height: 15px; border-radius: 50%; background: var(--accent-primary); border: 3px solid var(--bg-body);"></div>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--accent-primary); font-weight: bold; text-transform: uppercase;">2024 - Presente</span>
+      <h3 style="font-size: 1.35rem; margin: 0.25rem 0 0.5rem; color: var(--text-primary);">FP Grado Superior en Ciberseguridad</h3>
+      <p style="font-size: 0.95rem; margin: 0; color: var(--text-secondary);">
+        Formación avanzada en administración de sistemas seguros, análisis forense digital, redes, endurecimiento de infraestructura y respuesta a incidentes.
+      </p>
+    </div>
+
+    <!-- Evento 2 -->
+    <div style="margin-bottom: 1rem; position: relative;">
+      <div style="position: absolute; left: calc(-2rem - 9px); top: 4px; width: 15px; height: 15px; border-radius: 50%; background: var(--accent-primary); border: 3px solid var(--bg-body);"></div>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--accent-primary); font-weight: bold; text-transform: uppercase;">Autodidacta</span>
+      <h3 style="font-size: 1.35rem; margin: 0.25rem 0 0.5rem; color: var(--text-primary);">Competición y Laboratorios (CTF)</h3>
+      <p style="font-size: 0.95rem; margin: 0; color: var(--text-secondary);">
+        Resolución independiente de retos OSINT e investigación avanzada. Práctica en plataformas profesionales como TryHackMe, HackTheBox y eventos especializados (SoterCTF).
+      </p>
     </div>
   </div>
 </section>
