@@ -6,22 +6,13 @@ title: Biel Rosales | OSINT & Ciberseguridad
 <style>
   .hero-social-link {
     color: var(--text-secondary);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.2s ease, transform 0.2s ease;
     display: inline-flex;
   }
   .hero-social-link:hover {
     color: var(--accent-primary);
-    transform: translateY(-5px) scale(1.2);
-    filter: drop-shadow(0 0 8px var(--accent-primary));
-    animation: shake 0.2s infinite;
-    animation-delay: 0.5s;
-  }
-  @keyframes shake {
-    0%   { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-    25%  { transform: translateY(-5px) scale(1.2) rotate(3deg); }
-    50%  { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-    75%  { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
-    100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+    transform: translateY(-3px);
+    text-decoration: none;
   }
 
   .stat-grid {
@@ -32,18 +23,18 @@ title: Biel Rosales | OSINT & Ciberseguridad
     margin: 2rem 0;
   }
   .stat-box {
-    background: rgba(0, 180, 216, 0.06);
-    border: 1px solid rgba(0, 180, 216, 0.2);
-    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
     padding: 1rem 1.5rem;
     text-align: center;
-    min-width: 100px;
+    min-width: 110px;
   }
   .stat-number {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #00b4d8;
+    color: var(--accent-primary);
     display: block;
     line-height: 1;
     margin-bottom: 0.3rem;
@@ -51,7 +42,7 @@ title: Biel Rosales | OSINT & Ciberseguridad
   .stat-label {
     font-size: 0.75rem;
     color: var(--text-secondary);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
@@ -60,7 +51,7 @@ title: Biel Rosales | OSINT & Ciberseguridad
 <div class="hero">
   <div class="hero-scanner"></div>
   <h1>Biel Rosales</h1>
-  <p style="font-size: 1.25rem; color: var(--accent-primary); font-family: 'JetBrains Mono', monospace; margin-bottom: 0.75rem; font-weight: 600;">
+  <p style="font-size: 1.25rem; color: var(--accent-primary); font-family: 'Inter', sans-serif; margin-bottom: 0.75rem; font-weight: 600;">
     Analista Junior de Ciberinteligencia & OSINT
   </p>
   <p style="max-width: 650px; margin: 0 auto 1.5rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
