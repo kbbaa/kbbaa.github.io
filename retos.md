@@ -50,11 +50,11 @@ permalink: /retos/
 
   .platform-title {
     margin: 0;
-    font-size: 2.2rem;
-    font-weight: 800;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
     color: var(--text-primary);
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
   }
 
   .branch-line {
@@ -72,69 +72,6 @@ permalink: /retos/
     filter: drop-shadow(0 0 5px var(--accent-primary));
   }
 
-  .branch-gralhix {
-    animation: growLine 0.5s ease-out forwards, rainbow-blue 3s infinite linear !important;
-  }
-  .branch-thm {
-    animation: growLine 0.5s ease-out forwards, rainbow-red 3s infinite linear !important;
-  }
-  .branch-htb {
-    animation: growLine 0.5s ease-out forwards, rainbow-green 3s infinite linear !important;
-  }
-  .branch-uk {
-    animation: growLine 0.5s ease-out forwards, rainbow-uk 3s infinite linear !important;
-  }
-  .branch-soterctf {
-    animation: growLine 0.5s ease-out forwards, rainbow-soterctf 3s infinite linear !important;
-  }
-
-  @keyframes rainbow-soterctf {
-    0%   { border-color: #7c3aed; filter: drop-shadow(0 0 5px #7c3aed); }
-    33%  { border-color: #a78bfa; filter: drop-shadow(0 0 8px #a78bfa); }
-    66%  { border-color: #9333ea; filter: drop-shadow(0 0 5px #9333ea); }
-    100% { border-color: #7c3aed; filter: drop-shadow(0 0 5px #7c3aed); }
-  }
-
-  @keyframes rainbow-blue {
-    0%   { border-color: #0ea5e9; filter: drop-shadow(0 0 5px #0ea5e9); }
-    33%  { border-color: #00f2ff; filter: drop-shadow(0 0 8px #00f2ff); }
-    66%  { border-color: #3b82f6; filter: drop-shadow(0 0 5px #3b82f6); }
-    100% { border-color: #0ea5e9; filter: drop-shadow(0 0 5px #0ea5e9); }
-  }
-
-  @keyframes rainbow-red {
-    0%   { border-color: #ef4444; filter: drop-shadow(0 0 5px #ef4444); }
-    33%  { border-color: #f87171; filter: drop-shadow(0 0 8px #f87171); }
-    66%  { border-color: #dc2626; filter: drop-shadow(0 0 5px #dc2626); }
-    100% { border-color: #ef4444; filter: drop-shadow(0 0 5px #ef4444); }
-  }
-
-  @keyframes rainbow-green {
-    0%   { border-color: #22c55e; filter: drop-shadow(0 0 5px #22c55e); }
-    33%  { border-color: #4ade80; filter: drop-shadow(0 0 8px #4ade80); }
-    66%  { border-color: #16a34a; filter: drop-shadow(0 0 5px #16a34a); }
-    100% { border-color: #22c55e; filter: drop-shadow(0 0 5px #22c55e); }
-  }
-
-  @keyframes rainbow-uk {
-    0%   { border-color: #00247d; filter: drop-shadow(0 0 5px #00247d); }
-    33%  { border-color: #cf142b; filter: drop-shadow(0 0 8px #cf142b); }
-    66%  { border-color: #ffffff; filter: drop-shadow(0 0 5px #ffffff); }
-    100% { border-color: #00247d; filter: drop-shadow(0 0 5px #00247d); }
-  }
-
-  .branch-line::after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    bottom: -8px;
-    width: 0;
-    height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 10px solid inherit;
-    border-left-color: inherit;
-  }
 
   .platform-container.active .branch-line { display: block; }
 
@@ -171,7 +108,6 @@ permalink: /retos/
 </style>
 
 <div class="hero">
-  <div class="hero-scanner"></div>
   <h1>Writeups OSINT</h1>
   <p>Colección de retos resueltos con metodología detallada, herramientas utilizadas y lecciones aprendidas</p>
 </div>

@@ -39,32 +39,13 @@ permalink: /sobre-mi/
   <h1><span class="neon-text">Biel Rosales</span></h1>
   <p>Estudiante de FP Grado Superior en Ciberseguridad. Especializado en Ciberinteligencia, OSINT y resolución documentada de investigaciones.</p>
 
-  <div class="terminal-container" style="max-width: 600px; margin: 2rem auto; text-align: left;">
-    <div class="terminal-header">
-      <div class="terminal-dot dot-red"></div>
-      <div class="terminal-dot dot-yellow"></div>
-      <div class="terminal-dot dot-green"></div>
-      <span style="margin-left: 10px; color: #8b949e; font-size: 0.8rem;">investigator@kbbaa: ~</span>
-    </div>
-    <div class="terminal-body">
-      <div class="terminal-line">
-        <span class="terminal-prompt">$</span>
-        <span class="terminal-command">whoami</span>
-      </div>
-      <div class="terminal-output">Biel Rosales — FP Ciberseguridad · OSINT autodidacta · Barcelona</div>
-      <div class="terminal-line">
-        <span class="terminal-prompt">$</span>
-        <span class="terminal-command">cat perfil.json</span>
-      </div>
-      <div class="terminal-output">
-        {<br>
-        &nbsp;&nbsp;"edad": 19,<br>
-        &nbsp;&nbsp;"estado": "Finalizando FP Grado Superior",<br>
-        &nbsp;&nbsp;"enfoque": ["OSINT", "Google Dorks", "SOCMINT", "Geolocalización"],<br>
-        &nbsp;&nbsp;"objetivo": "Trabajar en inteligencia de fuentes abiertas",<br>
-        &nbsp;&nbsp;"writeups": "100% resueltos de forma independiente"<br>
-        }
-      </div>
+
+  <div style="max-width: 600px; margin: 2rem auto; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem 2rem; text-align: left;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem 2rem; font-size: 0.95rem;">
+      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Formación</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">FP Grado Superior en Ciberseguridad</p></div>
+      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Ubicación</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">Barcelona</p></div>
+      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Especialización</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">OSINT, SOCMINT, IMINT, Google Dorks</p></div>
+      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Objetivo</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">Inteligencia de fuentes abiertas</p></div>
     </div>
   </div>
 
@@ -87,25 +68,12 @@ permalink: /sobre-mi/
 
   <style>
     .skills-outer-container {
-      position: relative;
       max-width: 850px;
       margin: 2rem auto;
-      padding: 2.5rem 2rem;
-      background: linear-gradient(135deg, rgba(5, 15, 26, 0.85), rgba(0, 119, 182, 0.15));
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(0, 180, 216, 0.25);
-      border-radius: 24px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
-    }
-    .skills-outer-container::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(0, 180, 216, 0.5), transparent);
-      z-index: 2;
+      padding: 2rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
     }
     .radar-legend {
       display: flex;
@@ -119,23 +87,21 @@ permalink: /sobre-mi/
       align-items: center;
       gap: 6px;
       font-size: 12px;
-      color: #dff0f8;
-      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-secondary);
     }
     .legend-dot {
       width: 10px;
       height: 10px;
       border-radius: 2px;
-      background: #00b4d8;
+      background: var(--accent-primary);
       display: inline-block;
     }
     .radar-disclaimer {
       text-align: center;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      color: rgba(0, 180, 216, 0.5);
+      font-size: 0.78rem;
+      color: var(--text-secondary);
       margin-top: 1rem;
-      letter-spacing: 0.5px;
+      font-style: italic;
     }
     @media (max-width: 768px) {
       .skills-outer-container { padding: 1.5rem 1rem; margin: 1rem auto; }
@@ -167,18 +133,18 @@ permalink: /sobre-mi/
             'HUMINT digital',
             'Dark Web / OPSEC'
           ],
-          datasets: [{
+            datasets: [{
             label: 'Nivel actual',
             data: [72, 68, 65, 55, 50, 30],
-            backgroundColor: 'rgba(0, 180, 216, 0.18)',
-            borderColor: '#00b4d8',
+            backgroundColor: 'rgba(59, 130, 246, 0.15)',
+            borderColor: '#3b82f6',
             borderWidth: 2,
-            pointBackgroundColor: '#48cae4',
-            pointBorderColor: '#0077b6',
+            pointBackgroundColor: '#3b82f6',
+            pointBorderColor: '#fff',
             pointBorderWidth: 2,
             pointRadius: 5,
             pointHoverRadius: 7,
-            pointHoverBackgroundColor: '#90e0ef',
+            pointHoverBackgroundColor: '#60a5fa',
           }]
         },
         options: {
@@ -186,15 +152,15 @@ permalink: /sobre-mi/
           maintainAspectRatio: false,
           plugins: {
             legend: { display: false },
-            tooltip: {
+              tooltip: {
               callbacks: { label: (ctx) => ' ' + ctx.raw + '/100' },
-              backgroundColor: '#050f1a',
-              borderColor: '#00b4d8',
+              backgroundColor: 'var(--bg-primary)',
+              borderColor: 'var(--border-color)',
               borderWidth: 1,
-              titleColor: '#dff0f8',
-              bodyColor: '#48cae4',
-              titleFont: { family: 'JetBrains Mono', size: 12 },
-              bodyFont: { family: 'JetBrains Mono', size: 13, weight: '500' },
+              titleColor: 'var(--text-primary)',
+              bodyColor: 'var(--text-secondary)',
+              titleFont: { family: 'Inter', size: 12 },
+              bodyFont: { family: 'Inter', size: 13, weight: '500' },
               padding: 10,
             }
           },
@@ -205,16 +171,16 @@ permalink: /sobre-mi/
               ticks: {
                 stepSize: 25,
                 display: true,
-                color: 'rgba(0, 180, 216, 0.5)',
+                color: 'var(--text-secondary)',
                 backdropColor: 'transparent',
-                font: { family: 'JetBrains Mono', size: 10 },
+                font: { family: 'Inter', size: 10 },
                 callback: (v) => v
               },
-              grid: { color: 'rgba(0, 180, 216, 0.2)', lineWidth: 1 },
-              angleLines: { color: 'rgba(0, 180, 216, 0.25)', lineWidth: 1 },
+              grid: { color: 'var(--border-color)', lineWidth: 1 },
+              angleLines: { color: 'var(--border-color)', lineWidth: 1 },
               pointLabels: {
-                color: '#dff0f8',
-                font: { family: 'JetBrains Mono', size: 12, weight: '500' }
+                color: 'var(--text-primary)',
+                font: { family: 'Inter', size: 12, weight: '500' }
               }
             }
           },
@@ -229,17 +195,17 @@ permalink: /sobre-mi/
   <h2 style="text-align: center;">Cómo trabajo</h2>
   <div class="grid">
     <div class="card">
-      <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">01</div>
+      <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-primary); margin-bottom: 0.75rem;">01</div>
       <h3>Empiezo con poco</h3>
       <p>Un nombre, un alias, una foto. Me interesa lo que otros descartan: los datos que parecen no llevar a ningún sitio suelen ser el mejor punto de partida.</p>
     </div>
     <div class="card">
-      <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">02</div>
+      <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-primary); margin-bottom: 0.75rem;">02</div>
       <h3>Conecto los puntos</h3>
       <p>OSINT es sobre relaciones entre datos, no datos aislados. Busco vínculos entre perfiles, familiares, metadatos y huellas digitales para construir el mapa completo.</p>
     </div>
     <div class="card">
-      <div class="neon-text" style="font-size: 2rem; margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">03</div>
+      <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-primary); margin-bottom: 0.75rem;">03</div>
       <h3>Documento todo</h3>
       <p>Cada investigación queda registrada con metodología, herramientas y razonamiento. Si no puedes reproducirlo, no puedes verificarlo.</p>
     </div>
@@ -250,22 +216,13 @@ permalink: /sobre-mi/
   <style>
     .hero-social-link {
       color: var(--text-secondary);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 0.2s ease, transform 0.2s ease;
       display: inline-flex;
     }
     .hero-social-link:hover {
       color: var(--accent-primary);
-      transform: translateY(-5px) scale(1.2);
-      filter: drop-shadow(0 0 8px var(--accent-primary));
-      animation: shake 0.2s infinite;
-      animation-delay: 0.5s;
-    }
-    @keyframes shake {
-      0%   { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-      25%  { transform: translateY(-5px) scale(1.2) rotate(3deg); }
-      50%  { transform: translateY(-5px) scale(1.2) rotate(0deg); }
-      75%  { transform: translateY(-5px) scale(1.2) rotate(-3deg); }
-      100% { transform: translateY(-5px) scale(1.2) rotate(0deg); }
+      transform: translateY(-3px);
+      text-decoration: none;
     }
   </style>
   <h2>Contacto</h2>
