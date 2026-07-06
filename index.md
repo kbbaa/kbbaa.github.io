@@ -168,41 +168,10 @@ title: Biel Rosales | OSINT & Ciberseguridad
         <li><strong>Análisis</strong> — Spiderfoot, Wireshark y herramientas de esteganografía.</li>
       </ul>
     </div>
-    <div class="stack-card">
-      <h3>💻 Automatización & Sistemas</h3>
-      <ul>
-        <li><strong>Programación</strong> — Python para automatización, scripting y scraping.</li>
-        <li><strong>Sistemas</strong> — Linux (Kali/Debian) y entornos Bash.</li>
-        <li><strong>Control de versiones</strong> — Git y flujo colaborativo en GitHub.</li>
-      </ul>
-    </div>
   </div>
 </section>
 
-<section style="margin: 4rem auto; max-width: 1000px; padding: 0 1rem;">
-  <h2 style="text-align: center; margin-bottom: 2.5rem;">Educación & Trayectoria</h2>
-  
-  <div style="position: relative; padding-left: 2rem; border-left: 2px solid var(--border-color); margin-left: 1rem;">
-    <!-- Evento 1 -->
-    <div style="margin-bottom: 2rem; position: relative;">
-      <div style="position: absolute; left: calc(-2rem - 6px); top: 4px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent-primary); border: 2px solid var(--bg-body);"></div>
-      <span style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">2024 – Presente</span>
-      <h3 style="font-size: 1.2rem; margin: 0.25rem 0 0.4rem; color: var(--text-primary);">FP Grado Superior en Ciberseguridad</h3>
-      <p style="font-size: 0.93rem; margin: 0; color: var(--text-secondary);">
-        Formación avanzada en administración de sistemas seguros, análisis forense digital, redes, endurecimiento de infraestructura y respuesta a incidentes.
-      </p>
-    </div>
-    <!-- Evento 2 -->
-    <div style="margin-bottom: 1rem; position: relative;">
-      <div style="position: absolute; left: calc(-2rem - 6px); top: 4px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent-primary); border: 2px solid var(--bg-body);"></div>
-      <span style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Autodidacta</span>
-      <h3 style="font-size: 1.2rem; margin: 0.25rem 0 0.4rem; color: var(--text-primary);">Competición y Laboratorios (CTF)</h3>
-      <p style="font-size: 0.93rem; margin: 0; color: var(--text-secondary);">
-        Resolución independiente de retos OSINT. Práctica en TryHackMe, HackTheBox y eventos especializados como SoterCTF.
-      </p>
-    </div>
-  </div>
-</section>
+
 
 <section class="carousel-section" style="text-align: center;">
   <div class="carousel-glow carousel-glow-1"></div>
