@@ -5,50 +5,8 @@ permalink: /sobre-mi/
 ---
 
 <div class="hero">
-  <style>
-    .avatar-img {
-      animation: avatarImgPulse 4s ease-in-out infinite !important;
-      border-color: #00b4d8 !important;
-    }
-    .avatar-glow {
-      animation: avatarCyanPulseCustom 4s ease-in-out infinite !important;
-      box-shadow: 0 0 20px #00b4d8 !important;
-    }
-    @keyframes avatarImgPulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-    @keyframes avatarCyanPulseCustom {
-      0%, 100% {
-        opacity: 0.6;
-        transform: scale(1.01);
-        box-shadow: 0 0 15px #00b4d8;
-      }
-      50% {
-        opacity: 0.9;
-        transform: scale(1.06);
-        box-shadow: 0 0 35px #00b4d8, 0 0 50px rgba(0, 180, 216, 0.4);
-      }
-    }
-  </style>
-  <div class="hero-scanner"></div>
-  <div class="avatar-container">
-    <div class="avatar-glow"></div>
-    <img src="{{ '/assets/img/perfil.jpg' | relative_url }}" alt="Biel Rosales" class="avatar-img">
-  </div>
-  <h1><span class="neon-text">Biel Rosales</span></h1>
+  <h1>Biel Rosales</h1>
   <p>Estudiante de FP Grado Superior en Ciberseguridad. Especializado en Ciberinteligencia, OSINT y resolución documentada de investigaciones.</p>
-
-
-  <div style="max-width: 600px; margin: 2rem auto; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem 2rem; text-align: left;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem 2rem; font-size: 0.95rem;">
-      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Formación</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">FP Grado Superior en Ciberseguridad</p></div>
-      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Ubicación</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">Barcelona</p></div>
-      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Especialización</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">OSINT, SOCMINT, IMINT, Google Dorks</p></div>
-      <div><span style="color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Objetivo</span><p style="margin: 0.2rem 0 0; color: var(--text-primary); font-weight: 600;">Inteligencia de fuentes abiertas</p></div>
-    </div>
-  </div>
-
 </div>
 
 <section>
