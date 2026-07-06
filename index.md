@@ -116,7 +116,6 @@ title: Biel Rosales | OSINT & Ciberseguridad
   </div>
   <div class="hero-buttons">
     <a href="{{ '/retos' | relative_url }}" class="btn-primary">Ver Writeups</a>
-    <a href="{{ '/sobre-mi' | relative_url }}" class="btn-secondary">Sobre mí</a>
   </div>
 </div>
 
